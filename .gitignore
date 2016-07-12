@@ -12,6 +12,7 @@
 
 # Misc
 *.log
+/demo
 
 # System Files
 .DS_Store
