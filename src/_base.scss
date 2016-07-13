@@ -1,0 +1,30 @@
+/*********************************************************
+    Base
+*********************************************************/
+
+// .1rem = 1px
+// 1rem = 10px
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  color: #606c76;
+  
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

@@ -1,12 +1,55 @@
 .button {
   display: inline-block;
-  border: none;
-
-  & .button--small {
-
+  padding: 0 3rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: .05rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $color__primary;
+  border: .2rem solid $color__primary;
+  border-radius: .4rem;
+  cursor: pointer;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color__primary--dark;
+    border-color: $color__primary--dark;
+    outline: none;
   }
 
-  & .button--large {
-    
+  &.button--small {
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    line-height: 3rem;
+  }
+
+  &.button--large {
+    font-size: 1.5rem;
+    line-height: 6rem;
+  }
+
+  &.button--outline {
+    color: $color__primary;
+    background-color: transparent;
+
+    &:hover {
+      color: $color__primary--dark;
+    }
+  }
+
+  &.button--clear {
+    color: $color__primary;
+    background-color: transparent;
+    border-color: transparent;
+
+    &:hover {
+      color: $color__primary--dark;
+    }
   }
 }

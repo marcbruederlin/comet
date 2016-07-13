@@ -30,7 +30,7 @@
   });
 
   if(argv.watch) {
-    gulp.watch('./src/**/*.scss', ['build:sass']);
+    gulp.watch('./src/**/*.scss', ['build:sass', 'build:minify']);
   }
 
   gulp.task('build', ['build:clean', 'build:sass', 'build:minify']);
