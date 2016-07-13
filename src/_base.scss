@@ -1,9 +1,6 @@
 /*********************************************************
     Base
 *********************************************************/
-
-// .1rem = 1px
-// 1rem = 10px
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -22,9 +19,4 @@ body {
 *:after,
 *:before {
   box-sizing: inherit;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }

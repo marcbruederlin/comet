@@ -1,7 +1,7 @@
 a {
   text-decoration: none;
   color: $color__primary;
-  border-bottom: .3rem solid lighten($color__primary, 35%);
+  border-bottom: .2rem solid lighten($color__primary, 35%);
 
   &:hover {
     color: $color__primary--dark;
