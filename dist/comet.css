@@ -475,6 +475,51 @@ body {
       color: #259d66; }
 
 /*********************************************************
+    Forms
+*********************************************************/
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+label {
+  display: block;
+  font-weight: 600; }
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  color: #606c76;
+  border: 0.2rem solid #a2acb3;
+  border-radius: .4rem;
+  outline: none; }
+  input[type='email']:focus, input[type='email']:active,
+  input[type='number']:focus,
+  input[type='number']:active,
+  input[type='password']:focus,
+  input[type='password']:active,
+  input[type='search']:focus,
+  input[type='search']:active,
+  input[type='tel']:focus,
+  input[type='tel']:active,
+  input[type='text']:focus,
+  input[type='text']:active,
+  input[type='url']:focus,
+  input[type='url']:active,
+  textarea:focus,
+  textarea:active {
+    border-color: #52d699; }
+
+/*********************************************************
     Grid
 *********************************************************/
 .grid {
@@ -569,7 +614,7 @@ dl {
   margin: 0; }
 
 dl dt {
-  font-weight: 700; }
+  font-weight: 600; }
 
 /*********************************************************
     Media
@@ -577,6 +622,26 @@ dl dt {
 img {
   width: 100%;
   height: auto; }
+
+/*********************************************************
+    Tables
+*********************************************************/
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse; }
+  table.table--striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; }
+  table.table--hover tbody tr:hover {
+    background-color: #f5f5f5; }
+  table th {
+    padding: .8rem;
+    font-weight: 600;
+    border-bottom: .2rem solid #ddd;
+    vertical-align: bottom; }
+  table td {
+    padding: .8rem;
+    border-top: 1px solid #ddd; }
 
 /*********************************************************
     Typography

@@ -1,0 +1,36 @@
+/*********************************************************
+    Forms
+*********************************************************/
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+}
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea, {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  color: $color__text;
+  border: .2rem solid $color__text--light;
+  border-radius: .4rem;
+  outline: none;
+
+  &:focus,
+  &:active {
+    border-color: $color__primary;
+  }
+}
