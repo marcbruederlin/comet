@@ -564,8 +564,12 @@ a {
     Lists
 *********************************************************/
 ul,
-ol {
+ol,
+dl {
   margin: 0; }
+
+dl dt {
+  font-weight: 700; }
 
 /*********************************************************
     Media
@@ -578,41 +582,65 @@ img {
     Typography
 *********************************************************/
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  margin: 0; }
+  margin: 0;
+  font-weight: 400; }
 
 h1 {
   font-size: 4.0rem;
-  letter-spacing: -.1rem;
   line-height: 1.2; }
 
 h2 {
   font-size: 3.6rem;
-  letter-spacing: -.1rem;
   line-height: 1.25; }
 
 h3 {
   font-size: 3.0rem;
-  letter-spacing: -.1rem;
   line-height: 1.3; }
 
 h4 {
   font-size: 2.4rem;
-  letter-spacing: -.08rem;
   line-height: 1.35; }
 
 h5 {
   font-size: 2rem;
-  letter-spacing: -.05rem;
   line-height: 1.5; }
 
 h6 {
   font-size: 1.6rem;
-  letter-spacing: 0;
   line-height: 1.4; }
 
 p {
   margin: 0 0 1.8rem 0; }
+  p:last-of-type {
+    margin-bottom: 0; }
+
+abbr,
+abbr[title] {
+  text-decoration: none;
+  border-bottom: .1rem dotted #d4d4d4;
+  cursor: help; }
+
+blockquote {
+  margin: 3rem 0;
+  padding: 1rem 3rem;
+  border-left: 0.2rem solid #52d699; }
+  blockquote > p {
+    margin: 0; }
+  blockquote > footer {
+    margin-top: .3rem;
+    color: #a2acb3; }
+
+pre,
+samp,
+code {
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 1.4rem; }
+
+pre {
+  margin: 3rem 0;
+  padding: 3rem;
+  background-color: #f9f9f9;
+  border-left: 0.2rem solid #52d699; }
 
 /*********************************************************
     Utilities

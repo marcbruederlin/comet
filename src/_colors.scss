@@ -3,3 +3,7 @@
 *********************************************************/
 $color__primary: #52d699;
 $color__primary--dark: darken($color__primary, 20%);
+$color__primary--light: lighten($color__primary, 35%);
+
+$color__text: #606c76;
+$color__text--light: lighten($color__text, 25%);
