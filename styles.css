@@ -1,0 +1,29 @@
+body.introduction {
+  background-color: #434858;
+  background-image: url('./img/pattern.png');
+  background-blend-mode: multiply;
+}
+
+.introduction .container {
+  max-width: 550px;
+  padding: 0 30px;
+}
+
+.introduction .logo {
+  max-width: 60px;
+  margin: 0 auto;
+}
+
+.introduction h1,
+.introduction h2 {
+  color: #fff;
+  margin-top: 40px;
+}
+
+.introduction p {
+  margin-bottom: 50px;
+}
+
+.introduction .list {
+  margin-top: 30px;
+}
