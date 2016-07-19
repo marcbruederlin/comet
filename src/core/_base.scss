@@ -7,9 +7,9 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.6;
+  font-family: $font__sans-serif;
+  font-size: $font__base-font-size;
+  line-height: $font__base-line-height;
   color: $color__text;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
