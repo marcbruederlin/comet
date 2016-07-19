@@ -21,6 +21,7 @@
   &:hover,
   &:focus,
   &:active {
+    color: #fff;
     background-color: $color__primary--dark;
     border-color: $color__primary--dark;
     outline: none;

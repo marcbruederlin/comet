@@ -1,0 +1,40 @@
+/*********************************************************
+    Utilities
+*********************************************************/
+.text {
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+	&--center {
+		text-align: center;
+	}
+
+	&--highlight {
+		padding: .25rem;
+		color: #000;
+		background-color: #f6ed30;
+	}
+
+	&--loud {
+		font-weight: 700;
+		color: #000;
+	}
+
+	&--quiet {
+		color: #adadad;
+	}
+}
+
+.box {
+	&--center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
