@@ -1,12 +1,8 @@
 # Comet
 
-A lightweight and robust BEM-style CSS framework.
+A minimal and robust BEM-style CSS toolkit.
 
 ## Installation
-
-Soon…
-
-## Usage
 
 Soon…
 

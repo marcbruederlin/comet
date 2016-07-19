@@ -12,7 +12,7 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: $color__text--white;
   background-color: $color__primary;
   border: .2rem solid $color__primary;
   border-radius: .4rem;
@@ -21,7 +21,7 @@
   &:hover,
   &:focus,
   &:active {
-    color: #fff;
+    color: $color__text--white;
     background-color: $color__primary--dark;
     border-color: $color__primary--dark;
     outline: none;
