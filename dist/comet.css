@@ -1,3 +1,16 @@
+/*!
+ * Comet v0.1.0
+ * https://github.com/maaarc/comet
+ *
+ * Copyright (c) 2016 Marc Bruederlin
+ * Licensed under the MIT license
+*/
+/*********************************************************
+    Colors
+*********************************************************/
+/*********************************************************
+    Typography
+*********************************************************/
 /*********************************************************
     Core
 *********************************************************/
@@ -407,9 +420,6 @@ template {
   display: none; }
 
 /*********************************************************
-    Colors
-*********************************************************/
-/*********************************************************
     Base
 *********************************************************/
 html {
@@ -417,10 +427,10 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
-  color: #606c76;
+  color: #b1bac7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -499,8 +509,8 @@ textarea {
   width: 100%;
   padding: 1rem 2rem;
   font-family: inherit;
-  color: #606c76;
-  border: 0.2rem solid #a2acb3;
+  color: #b1bac7;
+  border: 0.2rem solid white;
   border-radius: .4rem;
   outline: none; }
   input[type='email']:focus, input[type='email']:active,
@@ -531,7 +541,7 @@ textarea {
       flex-flow: row wrap;
   margin: 0 -1rem;
   box-sizing: border-box; }
-  .grid.grid--equal-height .grid__column {
+  .grid.grid--equal-height .grid__col {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -542,55 +552,55 @@ textarea {
             flex-direction: row-reverse; }
   .grid.grid--gapless {
     margin: 0; }
-    .grid.grid--gapless .grid__column {
+    .grid.grid--gapless .grid__col {
       padding: 0; }
-  .grid .grid__column {
+  .grid .grid__col {
     padding: 0 1rem 1rem; }
-    .grid .grid__column.grid__column--12 {
+    .grid .grid__col.grid__col--12 {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
       max-width: 100%; }
-    .grid .grid__column.grid__column--11 {
+    .grid .grid__col.grid__col--11 {
       -ms-flex-preferred-size: 91.66666667%;
           flex-basis: 91.66666667%;
       max-width: 91.66666667%; }
-    .grid .grid__column.grid__column--10 {
+    .grid .grid__col.grid__col--10 {
       -ms-flex-preferred-size: 83.33333333%;
           flex-basis: 83.33333333%;
       max-width: 83.33333333%; }
-    .grid .grid__column.grid__column--9 {
+    .grid .grid__col.grid__col--9 {
       -ms-flex-preferred-size: 75%;
           flex-basis: 75%;
       max-width: 75%; }
-    .grid .grid__column.grid__column--8 {
+    .grid .grid__col.grid__col--8 {
       -ms-flex-preferred-size: 66.66666667%;
           flex-basis: 66.66666667%;
       max-width: 66.66666667%; }
-    .grid .grid__column.grid__column--7 {
+    .grid .grid__col.grid__col--7 {
       -ms-flex-preferred-size: 58.33333333%;
           flex-basis: 58.33333333%;
       max-width: 58.33333333%; }
-    .grid .grid__column.grid__column--6 {
+    .grid .grid__col.grid__col--6 {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
       max-width: 50%; }
-    .grid .grid__column.grid__column--5 {
+    .grid .grid__col.grid__col--5 {
       -ms-flex-preferred-size: 41.66666667%;
           flex-basis: 41.66666667%;
       max-width: 41.66666667%; }
-    .grid .grid__column.grid__column--4 {
+    .grid .grid__col.grid__col--4 {
       -ms-flex-preferred-size: 33.33333333%;
           flex-basis: 33.33333333%;
       max-width: 33.33333333%; }
-    .grid .grid__column.grid__column--3 {
+    .grid .grid__col.grid__col--3 {
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
       max-width: 25%; }
-    .grid .grid__column.grid__column--2 {
+    .grid .grid__col.grid__col--2 {
       -ms-flex-preferred-size: 16.66666667%;
           flex-basis: 16.66666667%;
       max-width: 16.66666667%; }
-    .grid .grid__column.grid__column--1 {
+    .grid .grid__col.grid__col--1 {
       -ms-flex-preferred-size: 8.33333333%;
           flex-basis: 8.33333333%;
       max-width: 8.33333333%; }
@@ -691,48 +701,51 @@ blockquote {
     margin: 0; }
   blockquote > footer {
     margin-top: .3rem;
-    color: #a2acb3; }
+    color: white; }
 
 pre,
 samp,
 code {
-  font-family: 'Consolas', 'Monaco', monospace;
+  font-family: "Consolas", "Monaco", monospace;
   font-size: 1.4rem; }
 
 pre {
-  margin: 3rem 0;
-  padding: 3rem;
-  background-color: #f9f9f9;
-  border-left: 0.2rem solid #17ffcb; }
+  margin: 3rem 0; }
 
 /*********************************************************
     Utilities
 *********************************************************/
 /*********************************************************
-    Utilities
+    Text Utilities
 *********************************************************/
-.text--left {
+.utility__text--left {
   text-align: left; }
 
-.text--right {
+.utility__text--right {
   text-align: right; }
 
-.text--center {
+.utility__text--center {
   text-align: center; }
 
-.text--highlight {
+.utility__text--highlight {
   padding: .25rem;
   color: #000;
   background-color: #f6ed30; }
 
-.text--loud {
+.utility__text--loud {
   font-weight: 700;
-  color: #000; }
+  color: #76859c; }
 
-.text--quiet {
-  color: #adadad; }
+.utility__text--quiet {
+  color: white; }
 
-.box--center {
+/*********************************************************
+    Position Utilities
+*********************************************************/
+.utility__pos--center {
+  margin: 0 auto; }
+
+.utility__pos--center-center {
   position: absolute;
   top: 50%;
   left: 50%;

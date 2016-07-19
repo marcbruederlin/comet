@@ -1,24 +1,34 @@
+/*!
+ * Comet v0.1.0
+ * https://github.com/maaarc/comet
+ *
+ * Copyright (c) 2016 Marc Bruederlin
+ * Licensed under the MIT license
+*/
+
+@import 'variables';
+
 /*********************************************************
     Core
 *********************************************************/
-@import 'normalize';
-@import 'colors';
-@import 'base';
-// @import 'print';
+@import 'core/normalize';
+@import 'core/base';
+// @import 'core/print';
 
 /*********************************************************
     Components
 *********************************************************/
-@import 'buttons';
-@import 'forms';
-@import 'grid';
-@import 'links';
-@import 'lists';
-@import 'media';
-@import 'tables';
-@import 'typography';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/grid';
+@import 'components/links';
+@import 'components/lists';
+@import 'components/media';
+@import 'components/tables';
+@import 'components/typography';
 
 /*********************************************************
     Utilities
 *********************************************************/
-@import 'utilities';
+@import 'utilities/text';
+@import 'utilities/position';
