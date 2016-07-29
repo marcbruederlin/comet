@@ -1,29 +1,44 @@
-body.introduction {
-  background-color: #434858;
+body {
+  asdbackground-color: #434858;
   background-image: url('./img/pattern.png');
   background-blend-mode: multiply;
 }
 
-.introduction .container {
+.container {
   max-width: 550px;
   padding: 0 30px;
 }
 
-.introduction .logo {
+.logo {
   max-width: 60px;
   margin: 0 auto;
 }
 
-.introduction h1,
-.introduction h2 {
+asdfh1,
+asdfh2 {
   color: #fff;
   margin-top: 40px;
 }
 
-.introduction p {
+p {
   margin-bottom: 50px;
 }
 
-.introduction .list {
+.list {
   margin-top: 30px;
+}
+
+.list .github {
+  position: relative;
+  top: 5px;
+}
+
+.grid .demo {
+  background: #d1d1d1;
+  border-radius: .4rem;
+  display: block;
+  height: 3.0rem;
+  line-height: 3.0rem;
+  text-align: center;
+  text-transform: uppercase;
 }

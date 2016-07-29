@@ -3,31 +3,224 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Comet · A minimal and robust BEM-style CSS toolkit.</title>
+    <title>Comet — A minimal and robust BEM-style CSS toolkit.</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="./dist/comet.min.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <body class="introduction">
-    <div class="container utility__pos--center-center utility__text--center">
-      <div class="logo">
-        <img src="./img/logo.svg" alt="Comet" title="Comet" />
+  <body>
+    <section class="introduction">
+      <div class="container">
+        <div class="logo">
+          <img src="./img/logo.svg" alt="Comet" title="Comet" />
+        </div>
+        
+        <h1>A minimal and robust BEM-style CSS toolkit.</h1>
+        <p>
+          Comet is a lightweight CSS toolkit for clean and fast web apps. It's written with 
+          the <a href="https://en.bem.info/methodology/naming-convention/" target="_blank">BEM methodology</a>
+          in mind for a more structured and readable code. No unnecessary styles are added, 
+          so you can spend more time building things and less time overriding. 
+        </p>
+
+        <a href="#getting-started" class="button">Getting Started</a>
+
+        <ul class="list list--inline">
+          <li>Version: alpha.01</li>
+          <li>License: <strong>MIT</strong></li>
+          <li class="github">
+            <a class="github-button" href="https://github.com/marcbruederlin/comet" data-icon="octicon-star" data-count-href="/marcbruederlin/comet/stargazers" 
+            data-count-api="/repos/marcbruederlin/comet#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star marcbruederlin/comet on GitHub">Star</a>
+          </li>
+        </ul>
       </div>
-      
-      <h2>A minimal and robust BEM-style CSS toolkit.</h2>
-      <p>
-        Comet provides a small set of styles for a small an clean starting point. No unnecessary styles are added so you
-        can spend more time building and less time overriding.
-      </p>
+    </section>
+    
+    <section class="getting-started">
+      <div class="container">
+        <a name="getting-started"></a>
+        <h2>Getting Started</h2>
+        <p>There are several different ways to get started with Comet, you can choose the most suitable option for your needs.</p>
+        <a href="https://github.com/marcbruederlin/comet.css/archive/master.zip" class="button" title="Download the latest version">Download comet.css</a>
 
-      <a href="./docs/" class="button">Getting Started</a>
+        <h3>Install with npm</h3>
+        <code>npm install comet --save</code>
 
-      <ul class="list list--inline">
-        <li>Version: alpha.01</li>
-        <li>License: <strong>MIT</strong></li>
-        <li><a href="https://github.com/maaarc/comet" target="">GitHub</a></li>
-      </ul>
-    </div>
+        <h3>Install with Bower</h3>
+        <code>bower install comet --save</code>
+
+        <h3>Use the CDN</h3>
+        <code>&lt;link href="https://npmcdn.com/comet@1.0.0/dist/comet.min.css" rel="stylesheet"&gt;</code>
+
+        <h3>Usage</h3>
+        <p>First, use a method above to download Comet. Then just add these tags in the head of your HTML file.</p>
+        <pre><code>&lt;!-- Comets default font --&gt;<br />&lt;link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet"&gt;<br /><br />&lt;!-- Minified Comet (installed via npm) --&gt;<br />&lt;link href="./node_modules/comet/dist/comet.min.css" rel="stylesheet"&gt;</code></pre>
+      </div>
+    </section>
+
+    <section class="typography">
+      <div class="container">
+        <a name="typography"></a>
+        <h2>Typography</h2>
+        <p>
+          Comet uses the <a href="https://fonts.google.com/specimen/Source+Sans+Pro" target="_blank">Source Sans Pro</a> family as the default sans serif 
+          font for headlines and body copy. <a href="https://github.com/todylu/monaco.ttf" target="_blank">Monaco</a> is used as default monospace font for code snippets.<br />
+          <br />
+          You can easily change the default fonts. For more information check the <a href="#customization">customization</a> chapter.
+        </p>
+
+        <h3>Headings</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <h3>Body copy</h3>
+        The 
+
+        <h3>Lists</h3>
+
+        <h3>Emphasis</h3>
+        <p>You can use different html tags to emphasis your text.</p>
+        <div class="grid">
+          <div class="grid__col grid__col--6"><strong>Strong</strong></div>
+          <div class="grid__col grid__col--6"><code>&lt;strong&gt;Strong&lt;/strong&gt;</code></div>
+
+          <div class="grid__col grid__col--6"><em>Italic</em></div>
+          <div class="grid__col grid__col--6"><code>&lt;em&gt;Italic&lt;/em&gt;</code></div>
+
+          <div class="grid__col grid__col--6"><u>Underline</u></div>
+          <div class="grid__col grid__col--6"><code>&lt;u&gt;Underline&lt;/u&gt;</code></div>
+
+          <div class="grid__col grid__col--6"><strike>Strike</strike></div>
+          <div class="grid__col grid__col--6"><code>&lt;strike&gt;Strike&lt;/strike&gt;</code></div>
+
+          <div class="grid__col grid__col--6"><small>Small</small></div>
+          <div class="grid__col grid__col--6"><code>&lt;small&gt;Small&lt;/small&gt;</code></div>
+        </div>
+
+        <h3>Quotes</h3>
+        <p>Blockquotes are used to label text that is quoted from another source.</p>
+
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer>— Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+
+        <pre><code>&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+  &lt;footer&gt;— Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;</code></pre>
+
+        <h3>Code</h3>
+      </div>
+    </section>
+
+	  <section class="tables">
+      <div class="container">
+        <a name="tables"></a>
+        <h2>Tables</h2>
+        <p>Soon…</p>
+      </div>
+    </section>
+
+    <section class="buttons">
+      <div class="container">
+        <a name="buttons"></a>
+        <h2>Buttons</h2>
+        <p>There are three basic styles for buttons. You can also add the button classes to anchor elements.</p>
+
+        <button class="button">Default button</button>
+        <button class="button button--outline">Outlined button</button>
+        <button class="button button--clear">Clear button</button>
+
+        <pre><code>
+&lt;button class="button"&gt;Default button&lt;/button&gt;
+&lt;button class="button button--outline"&gt;Outlined button&lt;/button&gt;
+&lt;button class="button button--clear"&gt;Clear button&lt;/button&gt;
+        </code></pre>
+
+        <p>The modifier classes <code>.button--small</code> and <code>.button--large</code> can be used to modify the appearance of a button.</p>
+
+        <button class="button button--small">Small button</button>
+        <button class="button button--large">Large button</button>
+
+        <pre><code>
+&lt;button class="button button--small"&gt;Small button&lt;/button&gt;
+&lt;button class="button button--large"&gt;Large button&lt;/button&gt;
+        </code></pre>
+      </div>
+    </section>
+
+    <section class="grid-system">
+      <div class="container">
+        <a name="grid-system"></a>
+        <h2>Grid system</h2>
+        <p>Provides a simple grid using flexbox.</p>
+
+        <div class="grid">
+          <div class="grid__col grid__col--12"><div class="demo">12</div></div>
+
+          <div class="grid__col grid__col--1"><div class="demo">1</div></div>
+          <div class="grid__col grid__col--11"><div class="demo">11</div></div>
+
+          <div class="grid__col grid__col--2"><div class="demo">2</div></div>
+          <div class="grid__col grid__col--10"><div class="demo">10</div></div>
+
+          <div class="grid__col grid__col--3"><div class="demo">3</div></div>
+          <div class="grid__col grid__col--9"><div class="demo">9</div></div>
+
+          <div class="grid__col grid__col--4"><div class="demo">4</div></div>
+          <div class="grid__col grid__col--8"><div class="demo">8</div></div>
+
+          <div class="grid__col grid__col--5"><div class="demo">5</div></div>
+          <div class="grid__col grid__col--7"><div class="demo">7</div></div>
+
+          <div class="grid__col grid__col--6"><div class="demo">6</div></div>
+          <div class="grid__col grid__col--6"><div class="demo">6</div></div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="utilities">
+      <div class="container">
+        <a name="utilities"></a>
+        <h2>Utilities</h2>
+        <p>Comet provides a set of useful utilities.</p>
+
+        <h3>Text</h3>
+        <p>Soon…</p>
+
+        <h3>Position</h3>
+        <p>Soon…</p>
+      </div>
+    </section>
+
+    <section class="support">
+      <div class="container">
+        <a name="support"></a>
+        <h2>Browser Support</h2>
+        <p>Soon…</p>
+      </div>
+    </section>
+
+    <section class="customization">
+      <div class="container">
+        <a name="customization"></a>
+        <h2>Customization</h2>
+        <p>Soon…</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        Made with ♥ by <a href="https://marcbruederlin.com" target="_blank">Marc Brüderlin</a>. Licensed under the <a href="https://github.com/marcbruederlin/comet.css/blob/master/LICENSE" target="_blank">MIT license</a>.
+      </div>
+    </footer>
   </body>
 </html>
