@@ -6,18 +6,21 @@
     <title>Comet — A minimal and robust BEM-style CSS toolkit.</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="./dist/comet.min.css" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="./css/prism.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script async defer src="./js/scripts.js"></script>
+    <script async defer src="./js/prism.js"></script>
   </head>
 
   <body>
     <section class="introduction">
       <div class="container">
         <div class="logo">
-          <img src="./img/logo.svg" alt="Comet" title="Comet" />
+          <h1><img src="./img/logo.svg" alt="Comet" title="Comet" /></h1>
         </div>
         
-        <h1>A minimal and robust BEM-style CSS toolkit.</h1>
+        <h2>A minimal and robust BEM-style CSS toolkit.</h2>
         <p>
           Comet is a lightweight CSS toolkit for clean and fast web apps. It's written with 
           the <a href="https://en.bem.info/methodology/naming-convention/" target="_blank">BEM methodology</a>
@@ -41,29 +44,33 @@
     <section class="getting-started">
       <div class="container">
         <a name="getting-started"></a>
-        <h2>Getting Started</h2>
+        <h3>Getting Started</h3>
         <p>There are several different ways to get started with Comet, you can choose the most suitable option for your needs.</p>
         <a href="https://github.com/marcbruederlin/comet.css/archive/master.zip" class="button" title="Download the latest version">Download comet.css</a>
 
-        <h3>Install with npm</h3>
+        <h4>Install with npm</h4>
         <code>npm install comet --save</code>
 
-        <h3>Install with Bower</h3>
+        <h4>Install with Bower</h4>
         <code>bower install comet --save</code>
 
-        <h3>Use the CDN</h3>
-        <code>&lt;link href="https://npmcdn.com/comet@1.0.0/dist/comet.min.css" rel="stylesheet"&gt;</code>
+        <h4>Use the CDN</h4>
+        <code class="language-html">&lt;link href="https://npmcdn.com/comet@1.0.0/dist/comet.min.css" rel="stylesheet"&gt;</code>
 
-        <h3>Usage</h3>
+        <h4>Usage</h4>
         <p>First, use a method above to download Comet. Then just add these tags in the head of your HTML file.</p>
-        <pre><code>&lt;!-- Comets default font --&gt;<br />&lt;link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet"&gt;<br /><br />&lt;!-- Minified Comet (installed via npm) --&gt;<br />&lt;link href="./node_modules/comet/dist/comet.min.css" rel="stylesheet"&gt;</code></pre>
+        <pre><code class="language-html">&lt;!-- Comets default font --&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet"&gt;
+
+&lt;!-- Minified Comet (installed via npm) --&gt;
+&lt;link href="./node_modules/comet/dist/comet.min.css" rel="stylesheet"&gt;</code></pre>
       </div>
     </section>
 
     <section class="typography">
       <div class="container">
         <a name="typography"></a>
-        <h2>Typography</h2>
+        <h3>Typography</h3>
         <p>
           Comet uses the <a href="https://fonts.google.com/specimen/Source+Sans+Pro" target="_blank">Source Sans Pro</a> family as the default sans serif 
           font for headlines and body copy. <a href="https://github.com/todylu/monaco.ttf" target="_blank">Monaco</a> is used as default monospace font for code snippets.<br />
@@ -71,7 +78,7 @@
           You can easily change the default fonts. For more information check the <a href="#customization">customization</a> chapter.
         </p>
 
-        <h3>Headings</h3>
+        <h4>Headings</h4>
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
@@ -79,12 +86,27 @@
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
 
-        <h3>Body copy</h3>
+        <h4>Body copy</h4>
         The 
 
-        <h3>Lists</h3>
+        <h4>Lists</h4>
+        <p>Soon…</p>
 
-        <h3>Emphasis</h3>
+        <ul class="list">
+          <li>List item #1</li>
+          <li>List item #2</li>
+          <li>List item #3</li>
+          <li>List item #4</li>
+        </ul>
+
+        <ul class="list list--inline">
+          <li>List item #1</li>
+          <li>List item #2</li>
+          <li>List item #3</li>
+          <li>List item #4</li>
+        </ul>
+
+        <h4>Emphasis</h4>
         <p>You can use different html tags to emphasis your text.</p>
         <div class="grid">
           <div class="grid__col grid__col--6"><strong>Strong</strong></div>
@@ -103,27 +125,27 @@
           <div class="grid__col grid__col--6"><code>&lt;small&gt;Small&lt;/small&gt;</code></div>
         </div>
 
-        <h3>Quotes</h3>
+        <h4>Quotes</h4>
         <p>Blockquotes are used to label text that is quoted from another source.</p>
 
-        <blockquote>
+        <blockquote class="blockquoute blockqoute--highlight">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer>— Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          <footer class="blockqoute__footer">— Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
 
-        <pre><code>&lt;blockquote&gt;
+        <pre><code class="language-html">&lt;blockquote class="blockqoute blockquote--highlight"&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-  &lt;footer&gt;— Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+  &lt;footer class="blockquote__footer"&gt;— Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
 &lt;/blockquote&gt;</code></pre>
 
-        <h3>Code</h3>
+        <h4>Code</h4>
       </div>
     </section>
 
 	  <section class="tables">
       <div class="container">
         <a name="tables"></a>
-        <h2>Tables</h2>
+        <h3>Tables</h3>
         <p>Soon…</p>
       </div>
     </section>
@@ -131,14 +153,14 @@
     <section class="buttons">
       <div class="container">
         <a name="buttons"></a>
-        <h2>Buttons</h2>
+        <h3>Buttons</h3>
         <p>There are three basic styles for buttons. You can also add the button classes to anchor elements.</p>
 
         <button class="button">Default button</button>
         <button class="button button--outline">Outlined button</button>
         <button class="button button--clear">Clear button</button>
 
-        <pre><code>
+        <pre><code class="language-html">
 &lt;button class="button"&gt;Default button&lt;/button&gt;
 &lt;button class="button button--outline"&gt;Outlined button&lt;/button&gt;
 &lt;button class="button button--clear"&gt;Clear button&lt;/button&gt;
@@ -149,7 +171,7 @@
         <button class="button button--small">Small button</button>
         <button class="button button--large">Large button</button>
 
-        <pre><code>
+        <pre><code class="language-html">
 &lt;button class="button button--small"&gt;Small button&lt;/button&gt;
 &lt;button class="button button--large"&gt;Large button&lt;/button&gt;
         </code></pre>
@@ -159,7 +181,7 @@
     <section class="grid-system">
       <div class="container">
         <a name="grid-system"></a>
-        <h2>Grid system</h2>
+        <h3>Grid system</h3>
         <p>Provides a simple grid using flexbox.</p>
 
         <div class="grid">
@@ -190,13 +212,13 @@
     <section class="utilities">
       <div class="container">
         <a name="utilities"></a>
-        <h2>Utilities</h2>
+        <h3>Utilities</h3>
         <p>Comet provides a set of useful utilities.</p>
 
-        <h3>Text</h3>
+        <h4>Text</h4>
         <p>Soon…</p>
 
-        <h3>Position</h3>
+        <h4>Position</h4>
         <p>Soon…</p>
       </div>
     </section>
@@ -204,7 +226,7 @@
     <section class="support">
       <div class="container">
         <a name="support"></a>
-        <h2>Browser Support</h2>
+        <h3>Browser Support</h3>
         <p>Soon…</p>
       </div>
     </section>
@@ -212,7 +234,7 @@
     <section class="customization">
       <div class="container">
         <a name="customization"></a>
-        <h2>Customization</h2>
+        <h3>Customization</h3>
         <p>Soon…</p>
       </div>
     </section>

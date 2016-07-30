@@ -1,6 +1,6 @@
 body {
   asdbackground-color: #434858;
-  background-image: url('./img/pattern.png');
+  background-image: url('../img/pattern.png');
   background-blend-mode: multiply;
 }
 
@@ -14,14 +14,8 @@ body {
   margin: 0 auto;
 }
 
-asdfh1,
-asdfh2 {
-  color: #fff;
-  margin-top: 40px;
-}
-
-p {
-  margin-bottom: 50px;
+h1, h2, h3, h4, h5, h6 {
+  asdcolor: #fff;
 }
 
 .list {
@@ -41,4 +35,12 @@ p {
   line-height: 3.0rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.introduction h1 {
+  margin: 0;
+}
+
+.introduction p {
+  margin-bottom: 40px;
 }
