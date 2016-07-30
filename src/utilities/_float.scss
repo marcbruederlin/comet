@@ -1,0 +1,26 @@
+/*********************************************************
+    Float Utilities
+*********************************************************/
+.utilities__float {
+  &--left {
+    float: left;
+  }
+
+  &--right {
+    float: right;
+  }
+}
+
+.utilities__clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
