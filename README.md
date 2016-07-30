@@ -4,14 +4,14 @@ A minimal and robust BEM-style CSS toolkit.
 
 ## Installation
 
-Soon…
+[Download the latest version](https://github.com/marcbruederlin/comet/archive/master.zip)
 
 ## Documentation
 - Getting Started
 - Typography
-- Buttons
-- Forms
-- Lists
 - Tables
-- Responsive
+- Buttons
+- Grid
 - Utilities
+- Browser Support
+- Customization

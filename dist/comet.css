@@ -1,6 +1,6 @@
 /*!
  * Comet v0.1.0
- * https://github.com/maaarc/comet
+ * https://github.com/marcbruederlin/comet
  *
  * Copyright (c) 2016 Marc Bruederlin
  * Licensed under the MIT license
@@ -443,6 +443,20 @@ body {
     Components
 *********************************************************/
 /*********************************************************
+    Blockqoutes
+*********************************************************/
+.blockquote {
+  margin: 3rem 0;
+  padding: 1rem 3rem; }
+  .blockquote > p {
+    margin: 0; }
+  .blockquote > .blockqoute__footer {
+    margin-top: .3rem;
+    color: white; }
+  .blockquote.blockqoute--highlight {
+    border-left: 0.2rem solid #17ffcb; }
+
+/*********************************************************
     Buttons
 *********************************************************/
 .button {
@@ -484,6 +498,18 @@ body {
     border-color: transparent; }
     .button.button--clear:hover {
       color: #00b089; }
+
+/*********************************************************
+    Codes
+*********************************************************/
+pre,
+samp,
+code {
+  font-family: "Monaco", monospace;
+  font-size: 1.4rem; }
+
+pre {
+  margin: 3rem 0; }
 
 /*********************************************************
     Forms
@@ -640,20 +666,20 @@ img {
 /*********************************************************
     Tables
 *********************************************************/
-table {
+.table {
   width: 100%;
   text-align: left;
   border-collapse: collapse; }
-  table.table--striped tbody tr:nth-of-type(odd) {
+  .table.table--striped tbody tr:nth-of-type(odd) {
     background-color: #f9f9f9; }
-  table.table--hover tbody tr:hover {
+  .table.table--hover tbody tr:hover {
     background-color: #f5f5f5; }
-  table th {
+  .table th {
     padding: .8rem;
     font-weight: 600;
     border-bottom: .2rem solid #ddd;
     vertical-align: bottom; }
-  table td {
+  .table td {
     padding: .8rem;
     border-top: 1px solid #ddd; }
 
@@ -693,61 +719,59 @@ abbr[title] {
   border-bottom: .1rem dotted #d4d4d4;
   cursor: help; }
 
-blockquote {
-  margin: 3rem 0;
-  padding: 1rem 3rem;
-  border-left: 0.2rem solid #17ffcb; }
-  blockquote > p {
-    margin: 0; }
-  blockquote > footer {
-    margin-top: .3rem;
-    color: white; }
-
-pre,
-samp,
-code {
-  font-family: "Consolas", "Monaco", monospace;
-  font-size: 1.4rem; }
-
-pre {
-  margin: 3rem 0; }
-
 /*********************************************************
     Utilities
 *********************************************************/
 /*********************************************************
     Text Utilities
 *********************************************************/
-.utility__text--left {
+.utilities__text--left {
   text-align: left; }
 
-.utility__text--right {
+.utilities__text--right {
   text-align: right; }
 
-.utility__text--center {
+.utilities__text--center {
   text-align: center; }
 
-.utility__text--highlight {
+.utilities__text--highlight {
   padding: .25rem;
   color: #000;
   background-color: #f6ed30; }
 
-.utility__text--loud {
+.utilities__text--loud {
   font-weight: 700;
   color: #76859c; }
 
-.utility__text--quiet {
+.utilities__text--quiet {
   color: white; }
 
 /*********************************************************
     Position Utilities
 *********************************************************/
-.utility__pos--center {
+.utilities__pos--center {
   margin: 0 auto; }
 
-.utility__pos--center-center {
+.utilities__pos--center-center {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+
+/*********************************************************
+    Float Utilities
+*********************************************************/
+.utilities__float--left {
+  float: left; }
+
+.utilities__float--right {
+  float: right; }
+
+.utilities__clearfix {
+  *zoom: 1; }
+  .utilities__clearfix:before, .utilities__clearfix:after {
+    content: " ";
+    display: table; }
+  .utilities__clearfix:after {
+    clear: both; }

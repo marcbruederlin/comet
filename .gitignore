@@ -13,6 +13,8 @@
 # Misc
 *.log
 /demo
+/js
+/css
 
 # System Files
 .DS_Store

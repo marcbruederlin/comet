@@ -42,29 +42,3 @@ abbr[title] {
 	border-bottom: .1rem dotted #d4d4d4;
 	cursor: help;
 }
-
-blockquote {
-	margin: 3rem 0;
-	padding: 1rem 3rem;
-	border-left: .2rem solid $color__primary;
-
-	& > p {
-		margin: 0;
-	}
-
-	& > footer {
-		margin-top: .3rem;
-		color: $color__text--light;
-	}
-}
-
-pre,
-samp,
-code {
-	font-family: $font__monospace;
-	font-size: 1.4rem;
-}
-
-pre {
-	margin: 3rem 0;
-}

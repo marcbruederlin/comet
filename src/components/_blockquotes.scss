@@ -1,0 +1,20 @@
+/*********************************************************
+    Blockqoutes
+*********************************************************/
+.blockquote {
+	margin: 3rem 0;
+	padding: 1rem 3rem;
+
+	& > p {
+		margin: 0;
+	}
+
+	& > .blockqoute__footer {
+		margin-top: .3rem;
+		color: $color__text--light;
+	}
+
+  &.blockqoute--highlight {
+    border-left: .2rem solid $color__primary;
+  }
+}
