@@ -1,6 +1,6 @@
 # [<img src="http://i.imgur.com/x8MvsGz.png" />](https://marcbruederlin.github.io/comet/)
 
-[![dependencies Status](https://david-dm.org/marcbruederlin/comet/status.svg)](https://david-dm.org/marcbruederlin/comet) [![devDependencies Status](https://david-dm.org/marcbruederlin/comet/dev-status.svg)](https://david-dm.org/marcbruederlin/comet?type=dev) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/marcbruederlin/comet/blob/master/LICENSE)   
+[![Build Status](https://travis-ci.org/marcbruederlin/comet.svg?branch=master)](https://travis-ci.org/marcbruederlin/comet) [![dependencies Status](https://david-dm.org/marcbruederlin/comet/status.svg)](https://david-dm.org/marcbruederlin/comet) [![devDependencies Status](https://david-dm.org/marcbruederlin/comet/dev-status.svg)](https://david-dm.org/marcbruederlin/comet?type=dev) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/marcbruederlin/comet/blob/master/LICENSE)   
 
 Comet is a minimal and robust CSS toolkit for clean and fast web apps. 
 It's written with the BEM methodology in mind for a more structured and 
@@ -18,7 +18,7 @@ There are several ways to get started:
 - [Getting Started](https://marcbruederlin.github.io/comet/#getting-started)
 - [Typography](https://marcbruederlin.github.io/comet/#typography)
 - [Blockquotes](https://marcbruederlin.github.io/comet/#blockquotes)
-- [Code](https://marcbruederlin.github.io/comet/#code)
+- [Code](https://marcbruederlin.github.io/comet/#codes)
 - [Lists](https://marcbruederlin.github.io/comet/#lists)
 - [Tables](https://marcbruederlin.github.io/comet/#tables)
 - [Buttons](https://marcbruederlin.github.io/comet/#buttons)
