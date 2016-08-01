@@ -1,8 +1,11 @@
-# <img src="http://i.imgur.com/Xs9IcwT.png" >
+# [<img src="http://i.imgur.com/x8MvsGz.png" />](https://marcbruederlin.github.io/comet/)
 
 [![dependencies Status](https://david-dm.org/marcbruederlin/comet/status.svg)](https://david-dm.org/marcbruederlin/comet) [![devDependencies Status](https://david-dm.org/marcbruederlin/comet/dev-status.svg)](https://david-dm.org/marcbruederlin/comet?type=dev) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/marcbruederlin/comet/blob/master/LICENSE)   
 
-Comet is a minimal and robust BEM-style CSS toolkit.
+Comet is a minimal and robust CSS toolkit for clean and fast web apps. 
+It's written with the BEM methodology in mind for a more structured and 
+readable code. No unnecessary styles are added, so you can spend more 
+time building things and less time overriding.
 
 ## Installation
 There are several ways to get started:

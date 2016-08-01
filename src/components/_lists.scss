@@ -5,12 +5,20 @@ dl {
   & dt {
     font-weight: 600;
   }
+
+  & dd {
+    margin: 0;
+  }
 }
 
 .list {
+  padding: 0;
+
+  &.list--unstyled {
+    list-style: none;
+  }
+
   &.list--inline {
-    padding: 0;
-    
     & li {
       display: inline-block;
       margin-right: 1rem;

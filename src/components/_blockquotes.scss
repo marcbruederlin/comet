@@ -1,5 +1,5 @@
 /*********************************************************
-    Blockqoutes
+    Blockquotes
 *********************************************************/
 .blockquote {
 	margin: 3rem 0;
@@ -9,12 +9,12 @@
 		margin: 0;
 	}
 
-	& > .blockqoute__footer {
+	& > .blockquote__footer {
 		margin-top: .3rem;
 		color: $color__text--light;
 	}
 
-  &.blockqoute--highlight {
+  &.blockquote--highlight {
     border-left: .2rem solid $color__primary;
   }
 }
