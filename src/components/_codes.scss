@@ -1,13 +1,17 @@
 /*********************************************************
     Codes
 *********************************************************/
-pre,
-samp,
-code {
+.code {
 	font-family: $font__monospace;
-	font-size: 1.4rem;
-}
+	font-size: 1.3rem;
 
-pre {
-	margin: 3rem 0;
+	&.code--background {
+    padding: .5rem 1rem;
+		background: rgba(0, 0, 0, 0.30);
+	}
+
+  &.code--highlight {
+    padding: .5rem 1rem;
+    border-left: .2rem solid $color__primary;
+  }
 }
