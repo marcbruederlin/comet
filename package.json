@@ -1,6 +1,6 @@
 {
   "name": "comet",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "A minimal and robust BEM-style CSS toolkit.",
   "main": "dist/comet.css",
   "repository": {
