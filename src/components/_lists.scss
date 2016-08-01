@@ -12,9 +12,11 @@ dl {
 }
 
 .list {
+  margin: 3rem 0;
   padding: 0;
 
   &.list--unstyled {
+    margin: 0;
     list-style: none;
   }
 
