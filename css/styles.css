@@ -1,11 +1,15 @@
 body {
-  asdbackground-color: #434858;
+  background-color: #434858;
   background-image: url('../img/pattern.png');
   background-blend-mode: multiply;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
 .container {
-  max-width: 550px;
+  max-width: 560px;
   padding: 0 30px;
 }
 
@@ -14,21 +18,9 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  asdcolor: #fff;
-}
-
-.list {
-  margin-top: 30px;
-}
-
-.list .github {
-  position: relative;
-  top: 5px;
-}
-
 .grid .demo {
-  background: #d1d1d1;
+  background: #f0f1f2;
+  color: #434858;
   border-radius: .4rem;
   display: block;
   height: 3.0rem;
@@ -37,10 +29,58 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.introduction {
+  margin: 9% 0;
+}
+
 .introduction h1 {
   margin: 0;
 }
 
 .introduction p {
+  margin-bottom: 50px;
+}
+
+.introduction .list {
+  margin-top: 30px;
+}
+
+.introduction .list .github {
+  position: relative;
+  top: 5px;
+}
+
+.introduction .list.list--inline li:after {
+  content: "·";
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+.introduction .list.list--inline li:last-of-type:after {
+  content: "";
+  margin-left: 0;
+}
+
+.typography .headings h1,
+.typography .headings h2,
+.typography .headings h3,
+.typography .headings h4,
+.typography .headings h5,
+.typography .headings h6 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+pre[class*="language-"] {
+    margin-bottom: 30px;
+}
+
+.meta-info {
+  margin-top: 100px;
   margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.heart {
+  color: #ef4f52;
 }

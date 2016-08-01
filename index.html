@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="./dist/comet.min.css" />
     <link rel="stylesheet" href="./css/prism.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script async defer src="./js/scripts.js"></script>
+    <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
     <script async defer src="./js/prism.js"></script>
   </head>
 
   <body>
     <section class="introduction">
-      <div class="container">
+      <div class="container utilities__pos--center">
         <div class="logo">
           <h1><img src="./img/logo.svg" alt="Comet" title="Comet" /></h1>
         </div>
@@ -28,34 +27,36 @@
           so you can spend more time building things and less time overriding. 
         </p>
 
-        <a href="#getting-started" class="button">Getting Started</a>
+        <div class="utilities__text--center">
+          <a href="#getting-started" class="button">Getting Started</a>
 
-        <ul class="list list--inline">
-          <li>Version: alpha.01</li>
-          <li>License: <strong>MIT</strong></li>
-          <li class="github">
-            <a class="github-button" href="https://github.com/marcbruederlin/comet" data-icon="octicon-star" data-count-href="/marcbruederlin/comet/stargazers" 
-            data-count-api="/repos/marcbruederlin/comet#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star marcbruederlin/comet on GitHub">Star</a>
-          </li>
-        </ul>
+          <ul class="list list--inline">
+            <li>Version: alpha.02</li>
+            <li>License: <strong>MIT</strong></li>
+            <li class="github">
+              <a class="github-button" href="https://github.com/marcbruederlin/comet" data-icon="octicon-star" data-count-href="/marcbruederlin/comet/stargazers" 
+              data-count-api="/repos/marcbruederlin/comet#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star marcbruederlin/comet on GitHub">Star</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     
     <section class="getting-started">
-      <div class="container">
+      <div class="container utilities__pos--center">
         <a name="getting-started"></a>
         <h3>Getting Started</h3>
         <p>There are several different ways to get started with Comet, you can choose the most suitable option for your needs.</p>
-        <a href="https://github.com/marcbruederlin/comet.css/archive/master.zip" class="button" title="Download the latest version">Download comet.css</a>
+        <a href="https://github.com/marcbruederlin/comet/archive/master.zip" class="button" title="Download the latest version">Download Comet</a>
 
         <h4>Install with npm</h4>
-        <code>npm install comet --save</code>
+        <code class="code code--background">npm install comet --save</code>
 
         <h4>Install with Bower</h4>
-        <code>bower install comet --save</code>
+        <code class="code code--background">bower install comet --save</code>
 
         <h4>Use the CDN</h4>
-        <code class="language-html">&lt;link href="https://npmcdn.com/comet@1.0.0/dist/comet.min.css" rel="stylesheet"&gt;</code>
+        <pre><code class="language-html">&lt;link href="https://npmcdn.com/comet@1.0.0/dist/comet.min.css" rel="stylesheet"&gt;</code></pre>
 
         <h4>Usage</h4>
         <p>First, use a method above to download Comet. Then just add these tags in the head of your HTML file.</p>
@@ -68,7 +69,7 @@
     </section>
 
     <section class="typography">
-      <div class="container">
+      <div class="container utilities__pos--center">
         <a name="typography"></a>
         <h3>Typography</h3>
         <p>
@@ -79,110 +80,313 @@
         </p>
 
         <h4>Headings</h4>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
+
+        <div class="headings">
+          <h1>Heading 1</h1>
+          <code class="code">font-size: 72px / line-height: 86px</code>
+
+          <h2>Heading 2</h2>
+          <code class="code">font-size: 54px / line-height: 65px</code>
+
+          <h3>Heading 3</h3>
+          <code class="code">font-size: 36px / line-height: 43px</code>
+
+          <h4>Heading 4</h4>
+          <code class="code">font-size: 27px / line-height: 32px</code>
+
+          <h5>Heading 5</h5>
+          <code class="code">font-size: 23px / line-height: 28px</code>
+
+          <h6>Heading 6</h6>
+          <code class="code">font-size: 19px / line-height: 23px</code>
+        </div>
 
         <h4>Body copy</h4>
-        The 
-
-        <h4>Lists</h4>
-        <p>Soon…</p>
-
-        <ul class="list">
-          <li>List item #1</li>
-          <li>List item #2</li>
-          <li>List item #3</li>
-          <li>List item #4</li>
-        </ul>
-
-        <ul class="list list--inline">
-          <li>List item #1</li>
-          <li>List item #2</li>
-          <li>List item #3</li>
-          <li>List item #4</li>
-        </ul>
+        The global font-size is 16px or 1.6rem with a line-height of 1.6. This is applied to the body and all paragraphs. 
+        Paragraphs also recive a bottom margin of 30px.
 
         <h4>Emphasis</h4>
         <p>You can use different html tags to emphasis your text.</p>
         <div class="grid">
           <div class="grid__col grid__col--6"><strong>Strong</strong></div>
-          <div class="grid__col grid__col--6"><code>&lt;strong&gt;Strong&lt;/strong&gt;</code></div>
+          <div class="grid__col grid__col--6"><code class="code">&lt;strong&gt;Strong&lt;/strong&gt;</code></div>
 
           <div class="grid__col grid__col--6"><em>Italic</em></div>
-          <div class="grid__col grid__col--6"><code>&lt;em&gt;Italic&lt;/em&gt;</code></div>
+          <div class="grid__col grid__col--6"><code class="code">&lt;em&gt;Italic&lt;/em&gt;</code></div>
 
           <div class="grid__col grid__col--6"><u>Underline</u></div>
-          <div class="grid__col grid__col--6"><code>&lt;u&gt;Underline&lt;/u&gt;</code></div>
+          <div class="grid__col grid__col--6"><code class="code">&lt;u&gt;Underline&lt;/u&gt;</code></div>
 
           <div class="grid__col grid__col--6"><strike>Strike</strike></div>
-          <div class="grid__col grid__col--6"><code>&lt;strike&gt;Strike&lt;/strike&gt;</code></div>
+          <div class="grid__col grid__col--6"><code class="code">&lt;strike&gt;Strike&lt;/strike&gt;</code></div>
 
           <div class="grid__col grid__col--6"><small>Small</small></div>
-          <div class="grid__col grid__col--6"><code>&lt;small&gt;Small&lt;/small&gt;</code></div>
+          <div class="grid__col grid__col--6"><code class="code">&lt;small&gt;Small&lt;/small&gt;</code></div>
         </div>
+      </div>
+    </section>
 
-        <h4>Quotes</h4>
+    <section class="blockquotes">
+      <div class="container utilities__pos--center">
+        <a name="blockquotes"></a>
+        <h3>Blockquotes</h3>
         <p>Blockquotes are used to label text that is quoted from another source.</p>
 
-        <blockquote class="blockquoute blockqoute--highlight">
+        <blockquote class="blockquote blockquote--highlight">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockqoute__footer">— Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          <footer class="blockquote__footer">— Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
 
-        <pre><code class="language-html">&lt;blockquote class="blockqoute blockquote--highlight"&gt;
+        <pre><code class="language-html">&lt;blockquote class="blockquote blockquote--highlight"&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
   &lt;footer class="blockquote__footer"&gt;— Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
 &lt;/blockquote&gt;</code></pre>
+      </div>
+    </section>
 
-        <h4>Code</h4>
+    <section class="code">
+      <div class="container utilities__pos--center">
+        <a name="code"></a>
+        <h3>Code</h3>
+        <p>
+          You can use the <code class="code">&lt;code&gt;</code> tag to wrap text that represents computer code. By default <code class="code">&lt;code&gt;</code> is a inline element.
+          If you need a block of code wrap the <code class="code">&lt;code&gt;</code> tag within the <code class="code">&lt;pre&gt;</code> element.
+        </p>
+        
+        <pre><code class="code">.test-class {
+  color: red;
+}</pre></code>
+
+<pre><code class="language-html">&lt;pre&gt;&lt;code class="code"&gt;
+  .test-class {
+    color: red;
+  }
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+        <p>There are also some modifier classes like <code class="code">.code--background</code> and <code class="code">.code--highlight</code> avaliable.</p>
+
+        <pre><code class="code code--background code--highlight">var x = 10;</code></pre>
+
+<pre><code class="language-html">&lt;pre&gt;&lt;code class="code code--background code--highlight"&gt;
+  var x = 10;
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+        For syntax highlighting you can use <a href="http://prismjs.com/" target="_blank">prismjs</a>.
+      </div>
+    </section>
+
+    <section class="lists">
+      <div class="container utilities__pos--center">
+        <a name="lists"></a>
+        <h3>Lists</h3>
+        <p>You can use the default <code class="code">&lt;ul&gt;</code>, <code class="code">&lt;ol&gt;</code> and <code class="code">&lt;dl&gt;</code> lists. </p>
+
+        <div class="grid">
+          <div class="grid__col grid__col--3">
+            <ul>
+              <li>Item #1</li>
+              <li>Item #2</li>
+            </ul>
+          </div>
+          <div class="grid__col grid__col--3">
+            <ol>
+              <li>Item #1</li>
+              <li>Item #2</li>
+            </ol>
+          </div>
+          <div class="grid__col grid__col--3">
+            <dl>
+              <dt>Item #1</dt>
+              <dd>Description</dd>
+            </dl>
+          </div>
+        </div>
+
+<pre><code class="language-html">&lt;!-- Unordered list --&gt;
+&lt;ul class="list"&gt;
+  &lt;li&gt;Item #1&lt;li&gt;
+  &lt;li&gt;Item #2&lt;li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered list --&gt;
+&lt;ol class="list"&gt;
+  &lt;li&gt;Item #1&lt;li&gt;
+  &lt;li&gt;Item #2&lt;li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Description list --&gt;
+&lt;dt class="list"&gt;
+  &lt;dt&gt;Item #1&lt;dt&gt;
+  &lt;dd&gt;Description&lt;dd&gt;
+&lt;/dt&gt;
+</code></pre>
+
+        <p>With the following modifiers you can change the appearance of a list.</p>
+
+        <h4>Inline list</h4>
+        <ul class="list list--inline">
+          <li>Item #1</li>
+          <li>Item #2</li>
+          <li>Item #3</li>
+        </ul>
+
+        <pre><code class="language-html">&lt;ul class="list list--inline"&gt;
+  &lt;li&gt;Item #1&lt;/li&gt;
+  &lt;li&gt;Item #2&lt;/li&gt;
+  &lt;li&gt;Item #3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <h4>Unstyled list</h4>
+        <ul class="list list--unstyled">
+          <li>Item #1</li>
+          <li>Item #2</li>
+          <li>Item #3</li>
+        </ul>
+
+        <pre><code class="language-html">&lt;ul class="list list--unstyled"&gt;
+  &lt;li&gt;Item #1&lt;/li&gt;
+  &lt;li&gt;Item #2&lt;/li&gt;
+  &lt;li&gt;Item #3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
       </div>
     </section>
 
 	  <section class="tables">
-      <div class="container">
+      <div class="container utilities__pos--center">
         <a name="tables"></a>
         <h3>Tables</h3>
-        <p>Soon…</p>
+
+        <h4>Basic table</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>john@doe.com</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Leanne Graham</td>
+              <td>sincere@april.biz</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ervin Howell</td>
+              <td>shanna@melissa.tv</td>
+            </tr>
+          </tbody>
+        </table>
+
+<pre><code class="language-html">&lt;table class="table"&gt;
+  …
+&lt;/table&gt;</code></pre>
+
+        <h4>Striped table</h4>
+        <table class="table table--striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>john@doe.com</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Leanne Graham</td>
+              <td>sincere@april.biz</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ervin Howell</td>
+              <td>shanna@melissa.tv</td>
+            </tr>
+          </tbody>
+        </table>
+
+<pre><code class="language-html">&lt;table class="table table--striped"&gt;
+  …
+&lt;/table&gt;</code></pre>
+
+        <h4>Hover rows</h4>
+        <table class="table table--hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>john@doe.com</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Leanne Graham</td>
+              <td>sincere@april.biz</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ervin Howell</td>
+              <td>shanna@melissa.tv</td>
+            </tr>
+          </tbody>
+        </table>
+
+<pre><code class="language-html">&lt;table class="table table--hover"&gt;
+  …
+&lt;/table&gt;</code></pre>
       </div>
     </section>
 
     <section class="buttons">
-      <div class="container">
+      <div class="container utilities__pos--center">
         <a name="buttons"></a>
         <h3>Buttons</h3>
         <p>There are three basic styles for buttons. You can also add the button classes to anchor elements.</p>
 
-        <button class="button">Default button</button>
-        <button class="button button--outline">Outlined button</button>
-        <button class="button button--clear">Clear button</button>
+        <p>
+          <button class="button">Default button</button>
+          <button class="button button--outline">Outlined button</button>
+          <button class="button button--clear">Clear button</button>
+        </p>
 
-        <pre><code class="language-html">
-&lt;button class="button"&gt;Default button&lt;/button&gt;
+        <pre><code class="language-html">&lt;button class="button"&gt;Default button&lt;/button&gt;
 &lt;button class="button button--outline"&gt;Outlined button&lt;/button&gt;
-&lt;button class="button button--clear"&gt;Clear button&lt;/button&gt;
-        </code></pre>
+&lt;button class="button button--clear"&gt;Clear button&lt;/button&gt;</code></pre>
 
         <p>The modifier classes <code>.button--small</code> and <code>.button--large</code> can be used to modify the appearance of a button.</p>
 
-        <button class="button button--small">Small button</button>
-        <button class="button button--large">Large button</button>
+        <p>
+          <button class="button button--small">Small button</button>
+          <button class="button button--large">Large button</button>
+        </p>
 
-        <pre><code class="language-html">
-&lt;button class="button button--small"&gt;Small button&lt;/button&gt;
-&lt;button class="button button--large"&gt;Large button&lt;/button&gt;
-        </code></pre>
+        <pre><code class="language-html">&lt;button class="button button--small"&gt;Small button&lt;/button&gt;
+&lt;button class="button button--large"&gt;Large button&lt;/button&gt;</code></pre>
       </div>
     </section>
 
     <section class="grid-system">
-      <div class="container">
+      <div class="container utilities__pos--center">
         <a name="grid-system"></a>
         <h3>Grid system</h3>
-        <p>Provides a simple grid using flexbox.</p>
+        <p>Comet provides a simple grid using flexbox.</p>
 
         <div class="grid">
           <div class="grid__col grid__col--12"><div class="demo">12</div></div>
@@ -204,27 +408,91 @@
 
           <div class="grid__col grid__col--6"><div class="demo">6</div></div>
           <div class="grid__col grid__col--6"><div class="demo">6</div></div>
-
         </div>
+
+        <pre><code class="language-html">&lt;div class="grid"&gt;
+  &lt;div class="grid__col grid__col--12"&gt;&lt;/div&gt;
+
+  &lt;div class="grid__col grid__col--1"&gt;&lt;/div&gt;
+  &lt;div class="grid__col grid__col--11"&gt;&lt;/div&gt;
+
+  &lt;div class="grid__col grid__col--2"&gt;&lt;/div&gt;
+  &lt;div class="grid__col grid__col--10"&gt;&lt;/div&gt;
+
+  &lt;div class="grid__col grid__col--3"&gt;&lt;/div&gt;
+  &lt;div class="grid__col grid__col--9"&gt;&lt;/div&gt;
+
+  &lt;div class="grid__col grid__col--4"&gt;&lt;/div&gt;
+  &lt;div class="grid__col grid__col--8"&gt;&lt;/div&gt;
+
+  &lt;div class="grid__col grid__col--5"&gt;&lt;/div&gt;
+  &lt;div class="grid__col grid__col--7"&gt;&lt;/div&gt;
+
+  &lt;div class="grid__col grid__col--6"&gt;&lt;/div&gt;
+  &lt;div class="grid__col grid__col--6"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
     </section>
 
     <section class="utilities">
-      <div class="container">
+      <div class="container utilities__pos--center">
         <a name="utilities"></a>
         <h3>Utilities</h3>
-        <p>Comet provides a set of useful utilities.</p>
+        <p>Comet provides a couple of useful utilities to boost your productivity.</p>
 
         <h4>Text</h4>
-        <p>Soon…</p>
+        <p class="utilities__text--left">Left aligned text.</p>
+        <pre><code class="language-html">&lt;p class="utilities__text--center"&gt;Left aligned text.&lt;/p&gt;</code></pre>
+
+        <p class="utilities__text--center">Center aligned text.</p>
+        <pre><code class="language-html">&lt;p class="utilities__text--center"&gt;Center aligned text.&lt;/p&gt;</code></pre>
+
+        <p class="utilities__text--right">Right aligned text.</p>
+        <pre><code class="language-html">&lt;p class="utilities__text--right"&gt;Right aligned text.&lt;/p&gt;</code></pre>
+
+        <p>This text is <span class="utilities__text--loud">loud</span>.</p>
+        <pre><code class="language-html">&lt;p&gt;This text is &lt;span class="utilities__text--loud"&gt;loud&lt;/span&gt;.&lt;/p&gt;</code></pre>
+
+        <p>This text is <span class="utilities__text--quiet">quiet</span>.</p>
+        <pre><code class="language-html">&lt;p&gt;This text is &lt;span class="utilities__text--quiet"&gt;quiet&lt;/span&gt;.&lt;/p&gt;</code></pre>
+
+        <p>This text is <span class="utilities__text--highlight">highlighted</span>.</p>
+        <pre><code class="language-html">&lt;p&gt;This text is &lt;span class="utilities__text--highlight"&gt;highlighted&lt;/span&gt;.&lt;/p&gt;</code></pre>
 
         <h4>Position</h4>
-        <p>Soon…</p>
+        <div class="utilities__pos--center" style="width: 100px;">This div is horizontal centered.</div>
+        <pre><code class="language-html">&lt;div class="utilities__pos--center" style="width: 100px;"&gt;This div is horizontal centered.&lt;/div&gt;</code></pre>
+
+        <div style="position: relative; height: 200px;"><div class="utilities__pos--center-center">This div is horizontal and vertical centered (in it's container).</div></div>
+        <pre><code class="language-html">&lt;div style="position: relative; height: 200px;"&gt;
+  &lt;div class="utilities__pos--center-center"&gt;This div is horizontal and vertical centered (in it's container).&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h4>Float</h4>
+        <div class="utilities__clearfix">
+          <p class="utilities__float--left">This paragraph floats to the left.</p>
+        </div>
+        <pre><code class="language-html">&lt;p class="utilities__float--left"&gt;This paragraph floats to the left.&lt;p&gt;</code></pre>
+
+        <div class="utilities__clearfix">
+          <p class="utilities__float--right">This paragraph floats to the right.</p>
+        </div>
+        <pre><code class="language-html">&lt;p class="utilities__float--right"&gt;This paragraph floats to the right.&lt;p&gt;</code></pre>
+
+        <p>The class <code class="code">.utilities__clearfix</code> clears all floats.</p>
+        <div class="utilities__clearfix">
+          <div class="utilities__float--left">Left</div>
+          <div class="utilities__float--right">Right</div>
+        </div>
+        <pre><code class="language-html">&lt;div class="utilities__clearfix"&gt;
+  &lt;div class="utilities__float--left"&gt;Left&lt;/div&gt;
+  &lt;div class="utilities__float--right"&gt;Right&lt;/div&gt;
+&lt;div&gt;</code></pre>
       </div>
     </section>
 
     <section class="support">
-      <div class="container">
+      <div class="container utilities__pos--center">
         <a name="support"></a>
         <h3>Browser Support</h3>
         <p>Soon…</p>
@@ -232,16 +500,20 @@
     </section>
 
     <section class="customization">
-      <div class="container">
+      <div class="container utilities__pos--center">
         <a name="customization"></a>
         <h3>Customization</h3>
         <p>Soon…</p>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        Made with ♥ by <a href="https://marcbruederlin.com" target="_blank">Marc Brüderlin</a>. Licensed under the <a href="https://github.com/marcbruederlin/comet.css/blob/master/LICENSE" target="_blank">MIT license</a>.
+    <footer class="meta-info">
+      <div class="container utilities__pos--center">
+        <hr />
+        Made with <span class="heart">♥</span> by <a href="https://marcbruederlin.com" target="_blank">Marc Brüderlin</a>. Licensed under the <a href="https://github.com/marcbruederlin/comet/blob/master/LICENSE" target="_blank">MIT license</a>.
+        <br /><br />
+        <a class="github-button" href="https://github.com/marcbruederlin" aria-label="Follow @marcbruederlin on GitHub">Follow @marcbruederlin</a><br />
+        <a href="https://www.paypal.me/marcbruederlin" target="_blank">Buy me a coffee</a>
       </div>
     </footer>
   </body>
