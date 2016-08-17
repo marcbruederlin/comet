@@ -10,9 +10,9 @@ time building things and less time overriding.
 ## Installation
 There are several ways to get started:
 - [Download the latest version](https://github.com/marcbruederlin/comet/archive/master.zip)
-- Install with npm: `npm install comet --save`
-- Install with Bower: `bower install comet --save`
-- Use the CDN: `https://npmcdn.com/comet@1.0.0/dist/comet.min.css`
+- Install with npm: `npm install comet-css --save`
+- Install with Bower: `bower install comet-css --save`
+- Use the CDN: `https://npmcdn.com/comet-css@1.0.0/dist/comet.min.css`
 
 ## Documentation
 - [Getting Started](https://marcbruederlin.github.io/comet/#getting-started)
