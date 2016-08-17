@@ -1,7 +1,7 @@
 /*********************************************************
     Colors
 *********************************************************/
-$color__primary: #17ffcb;
+$color__primary: #19e2b5;
 $color__primary--dark: darken($color__primary, 20%);
 $color__primary--light: lighten($color__primary, 35%);
 
@@ -20,3 +20,10 @@ $font__sans-serif: 'Source Sans Pro', sans-serif;
 $font__monospace: 'Monaco', monospace;
 $font__base-font-size: 1.6rem;
 $font__base-line-height: 1.6;
+
+/*********************************************************
+    Responsive
+*********************************************************/
+$breakpoint__small: 425px;
+$breakpoint__medium: 768px;
+// $breakpoint__large: 992px;
