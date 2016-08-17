@@ -31,8 +31,8 @@
           <a href="#getting-started" class="button">Getting Started</a>
 
           <ul class="list list--inline">
-            <li>Version: alpha.02</li>
-            <li>License: <strong>MIT</strong></li>
+            <li>Version: beta.01</li>
+            <li>License: MIT</li>
             <li class="github">
               <a class="github-button" href="https://github.com/marcbruederlin/comet" data-icon="octicon-star" data-count-href="/marcbruederlin/comet/stargazers" 
               data-count-api="/repos/marcbruederlin/comet#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star marcbruederlin/comet on GitHub">Star</a>
@@ -65,6 +65,8 @@
 
 &lt;!-- Minified Comet (installed via npm) --&gt;
 &lt;link href="./node_modules/comet/dist/comet.min.css" rel="stylesheet"&gt;</code></pre>
+
+        <hr class="hr seperator" />
       </div>
     </section>
 
@@ -123,6 +125,8 @@
           <div class="grid__col grid__col--6"><small>Small</small></div>
           <div class="grid__col grid__col--6"><code class="code">&lt;small&gt;Small&lt;/small&gt;</code></div>
         </div>
+
+        <hr class="hr seperator" />
       </div>
     </section>
 
@@ -141,6 +145,8 @@
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
   &lt;footer class="blockquote__footer"&gt;— Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
 &lt;/blockquote&gt;</code></pre>
+
+        <hr class="hr seperator" />
       </div>
     </section>
 
@@ -172,6 +178,8 @@
 &lt;/code&gt;&lt;/pre&gt;</code></pre>
 
         For syntax highlighting you can use <a href="http://prismjs.com/" target="_blank">prismjs</a>.
+        
+        <hr class="hr seperator" />
       </div>
     </section>
 
@@ -248,6 +256,8 @@
   &lt;li&gt;Item #2&lt;/li&gt;
   &lt;li&gt;Item #3&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+
+        <hr class="hr seperator" />
       </div>
     </section>
 
@@ -351,6 +361,8 @@
 <pre><code class="language-html">&lt;table class="table table--hover"&gt;
   …
 &lt;/table&gt;</code></pre>
+      
+        <hr class="hr seperator" />
       </div>
     </section>
 
@@ -379,6 +391,7 @@
 
         <pre><code class="language-html">&lt;button class="button button--small"&gt;Small button&lt;/button&gt;
 &lt;button class="button button--large"&gt;Large button&lt;/button&gt;</code></pre>
+        <hr class="hr seperator" />
       </div>
     </section>
 
@@ -391,7 +404,7 @@
         <div class="grid">
           <div class="grid__col grid__col--12"><div class="demo">12</div></div>
 
-          <div class="grid__col grid__col--1"><div class="demo">1</div></div>
+          <div class="grid__col grid__col--1 grid__col--m-10"><div class="demo">1</div></div>
           <div class="grid__col grid__col--11"><div class="demo">11</div></div>
 
           <div class="grid__col grid__col--2"><div class="demo">2</div></div>
@@ -431,6 +444,63 @@
   &lt;div class="grid__col grid__col--6"&gt;&lt;/div&gt;
   &lt;div class="grid__col grid__col--6"&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+        <p>The grid module has two modifiers:</p>
+
+        <h4>Reverse grid</h4>
+        <div class="grid grid--reverse">
+          <div class="grid__col grid__col--12"><div class="demo">12</div></div>
+
+          <div class="grid__col grid__col--1 grid__col--m-10"><div class="demo">1</div></div>
+          <div class="grid__col grid__col--11"><div class="demo">11</div></div>
+
+          <div class="grid__col grid__col--2"><div class="demo">2</div></div>
+          <div class="grid__col grid__col--10"><div class="demo">10</div></div>
+
+          <div class="grid__col grid__col--3"><div class="demo">3</div></div>
+          <div class="grid__col grid__col--9"><div class="demo">9</div></div>
+
+          <div class="grid__col grid__col--4"><div class="demo">4</div></div>
+          <div class="grid__col grid__col--8"><div class="demo">8</div></div>
+
+          <div class="grid__col grid__col--5"><div class="demo">5</div></div>
+          <div class="grid__col grid__col--7"><div class="demo">7</div></div>
+
+          <div class="grid__col grid__col--6"><div class="demo">6</div></div>
+          <div class="grid__col grid__col--6"><div class="demo">6</div></div>
+        </div>
+
+        <pre><code class="language-html">&lt;div class="grid grid--reverse"&gt;
+  …
+&lt;/div&gt;</code></pre>
+
+        <h4>Gapless grid</h4>
+        <div class="grid grid--gapless">
+          <div class="grid__col grid__col--12"><div class="demo">12</div></div>
+
+          <div class="grid__col grid__col--1 grid__col--m-10"><div class="demo">1</div></div>
+          <div class="grid__col grid__col--11"><div class="demo">11</div></div>
+
+          <div class="grid__col grid__col--2"><div class="demo">2</div></div>
+          <div class="grid__col grid__col--10"><div class="demo">10</div></div>
+
+          <div class="grid__col grid__col--3"><div class="demo">3</div></div>
+          <div class="grid__col grid__col--9"><div class="demo">9</div></div>
+
+          <div class="grid__col grid__col--4"><div class="demo">4</div></div>
+          <div class="grid__col grid__col--8"><div class="demo">8</div></div>
+
+          <div class="grid__col grid__col--5"><div class="demo">5</div></div>
+          <div class="grid__col grid__col--7"><div class="demo">7</div></div>
+
+          <div class="grid__col grid__col--6"><div class="demo">6</div></div>
+          <div class="grid__col grid__col--6"><div class="demo">6</div></div>
+        </div>
+
+        <pre><code class="language-html">&lt;div class="grid grid--gapless"&gt;
+  …
+&lt;/div&gt;</code></pre>
+     
+        <hr class="hr seperator" />
       </div>
     </section>
 
@@ -488,6 +558,8 @@
   &lt;div class="utilities__float--left"&gt;Left&lt;/div&gt;
   &lt;div class="utilities__float--right"&gt;Right&lt;/div&gt;
 &lt;div&gt;</code></pre>
+
+        <hr class="hr seperator" />
       </div>
     </section>
 
@@ -495,7 +567,17 @@
       <div class="container utilities__pos--center">
         <a name="support"></a>
         <h3>Browser Support</h3>
-        <p>Soon…</p>
+        <p>Comet uses autoprefixer to make features compatible with earlier browser versions. Comet is compatible with:</p>
+        <ul>
+          <li>Chrome</li>    
+          <li>Firefox</li>    
+          <li>Edge</li>    
+          <li>Internet Explorer (10+)</li>    
+          <li>Opera</li>    
+          <li>Safari</li>    
+        </ul>
+
+        <hr class="hr seperator" />
       </div>
     </section>
 
@@ -510,9 +592,8 @@
     <footer class="meta-info">
       <div class="container utilities__pos--center">
         <hr class="hr" />
-        Made with <span class="heart">♥</span> by <a href="https://marcbruederlin.com" target="_blank">Marc Brüderlin</a>. Licensed under the <a href="https://github.com/marcbruederlin/comet/blob/master/LICENSE" target="_blank">MIT license</a>.<br />
-        If you want, you can <a href="https://www.paypal.me/marcbruederlin" target="_blank">buy me a coffee</a>.
-        <br /><br />
+        <p>Made with <span class="heart">♥</span> by <a href="https://marcbruederlin.com" target="_blank">Marc Brüderlin</a>. Licensed under the <a href="https://github.com/marcbruederlin/comet/blob/master/LICENSE" target="_blank">MIT license</a>.<br />
+        If you want, you can <a href="https://www.paypal.me/marcbruederlin" target="_blank">buy me a coffee</a>.</p>
         <a class="github-button" href="https://github.com/marcbruederlin" aria-label="Follow @marcbruederlin on GitHub">Follow @marcbruederlin</a><br />
       </div>
     </footer>

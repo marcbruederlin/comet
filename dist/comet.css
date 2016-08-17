@@ -1,5 +1,5 @@
 /*!
- * Comet v0.2.0
+ * Comet v0.1.0
  * https://github.com/marcbruederlin/comet
  *
  * Copyright (c) 2016 Marc Bruederlin
@@ -452,7 +452,7 @@ body {
     margin: 0; }
   .blockquote > .blockquote__footer {
     margin-top: .3rem;
-    color: white; }
+    color: #eceff2; }
   .blockquote.blockquote--highlight {
     border-left: 0.2rem solid #17ffcb; }
 
@@ -503,12 +503,13 @@ body {
     Codes
 *********************************************************/
 .code {
-  padding: .5rem 1rem;
   font-family: "Monaco", monospace;
   font-size: 1.3rem; }
   .code.code--background {
+    padding: .5rem 1rem;
     background: rgba(0, 0, 0, 0.3); }
   .code.code--highlight {
+    padding: .5rem 1rem;
     border-left: 0.2rem solid #17ffcb; }
 
 /*********************************************************
@@ -536,7 +537,7 @@ textarea {
   padding: 1rem 2rem;
   font-family: inherit;
   color: #b1bac7;
-  border: 0.2rem solid white;
+  border: 0.2rem solid #eceff2;
   border-radius: .4rem;
   outline: none; }
   input[type='email']:focus, input[type='email']:active,
@@ -652,8 +653,10 @@ dl dd {
   margin: 0; }
 
 .list {
+  margin: 3rem 0;
   padding: 0; }
   .list.list--unstyled {
+    margin: 0;
     list-style: none; }
   .list.list--inline li {
     display: inline-block;
@@ -687,18 +690,18 @@ img {
   width: 100%;
   text-align: left;
   border-collapse: collapse; }
-  .table.table--striped tbody tr:nth-of-type(odd) {
-    background-color: #f9f9f9; }
-  .table.table--hover tbody tr:hover {
-    background-color: #f5f5f5; }
   .table th {
     padding: .8rem;
     font-weight: 600;
-    border-bottom: .2rem solid #ddd;
+    border-bottom: 0.2rem solid rgba(177, 186, 199, 0.25);
     vertical-align: bottom; }
   .table td {
     padding: .8rem;
-    border-top: 1px solid #ddd; }
+    border-top: 1px solid rgba(177, 186, 199, 0.25); }
+  .table.table--striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.04); }
+  .table.table--hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.15); }
 
 /*********************************************************
     Typography
@@ -754,14 +757,14 @@ abbr[title] {
 .utilities__text--highlight {
   padding: .25rem;
   color: #000;
-  background-color: #f6ed30; }
+  background-color: #fdf72e; }
 
 .utilities__text--loud {
   font-weight: 700;
   color: #76859c; }
 
 .utilities__text--quiet {
-  color: white; }
+  color: #eceff2; }
 
 /*********************************************************
     Position Utilities

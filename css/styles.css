@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.seperator {
+  margin-top: 65px;
+}
+
 .container {
   max-width: 560px;
   padding: 0 30px;
@@ -73,6 +77,13 @@ h1, h2, h3, h4, h5, h6 {
 
 pre[class*="language-"] {
     margin-bottom: 30px;
+    font-size: 13px;
+    line-height: 1.7;
+    asdbackground-color: rgba(0, 0, 0, .3);
+}
+
+code[class*="language-"] {
+    text-shadow: none;
 }
 
 .meta-info {
