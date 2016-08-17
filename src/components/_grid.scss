@@ -7,12 +7,6 @@
   margin: 0 -1rem;
   box-sizing: border-box;
 
-  &.grid--equal-height {
-    & .grid__col {
-      display: flex;
-    }
-  }
-
   &.grid--reverse {
     flex-direction: row-reverse;
   }
