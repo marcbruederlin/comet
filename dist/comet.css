@@ -1,5 +1,5 @@
 /*!
- * Comet v0.1.0
+ * Comet v1.0.0
  * https://github.com/marcbruederlin/comet
  *
  * Copyright (c) 2016 Marc Bruederlin
@@ -10,6 +10,9 @@
 *********************************************************/
 /*********************************************************
     Typography
+*********************************************************/
+/*********************************************************
+    Responsive
 *********************************************************/
 /*********************************************************
     Core
@@ -430,7 +433,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
-  color: #b1bac7;
+  color: #626979;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -438,6 +441,19 @@ body {
 *:after,
 *:before {
   box-sizing: inherit; }
+
+/*********************************************************
+    Print
+*********************************************************/
+@media print {
+  body {
+    -webkit-print-color-adjust: exact; }
+  a[href^="http://"]:after,
+  a[href^="https://"]:after,
+  a[href^="www."]:after {
+    content: " (" attr(href) ")"; }
+  a[href^="#"]:after {
+    display: none; } }
 
 /*********************************************************
     Components
@@ -452,9 +468,9 @@ body {
     margin: 0; }
   .blockquote > .blockquote__footer {
     margin-top: .3rem;
-    color: #eceff2; }
+    color: #979daa; }
   .blockquote.blockquote--highlight {
-    border-left: 0.2rem solid #17ffcb; }
+    border-left: 0.2rem solid #19e2b5; }
 
 /*********************************************************
     Buttons
@@ -471,14 +487,14 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  background-color: #17ffcb;
-  border: 0.2rem solid #17ffcb;
+  background-color: #19e2b5;
+  border: 0.2rem solid #19e2b5;
   border-radius: .4rem;
   cursor: pointer; }
   .button:hover, .button:focus, .button:active {
     color: #fff;
-    background-color: #00b089;
-    border-color: #00b089;
+    background-color: #0f866b;
+    border-color: #0f866b;
     outline: none; }
   .button.button--small {
     padding: 0 1rem;
@@ -488,16 +504,16 @@ body {
     font-size: 1.5rem;
     line-height: 6rem; }
   .button.button--outline {
-    color: #17ffcb;
+    color: #19e2b5;
     background-color: transparent; }
     .button.button--outline:hover {
-      color: #00b089; }
+      color: #0f866b; }
   .button.button--clear {
-    color: #17ffcb;
+    color: #19e2b5;
     background-color: transparent;
     border-color: transparent; }
     .button.button--clear:hover {
-      color: #00b089; }
+      color: #0f866b; }
 
 /*********************************************************
     Codes
@@ -507,10 +523,10 @@ body {
   font-size: 1.3rem; }
   .code.code--background {
     padding: .5rem 1rem;
-    background: rgba(0, 0, 0, 0.3); }
+    background: rgba(0, 0, 0, 0.05); }
   .code.code--highlight {
     padding: .5rem 1rem;
-    border-left: 0.2rem solid #17ffcb; }
+    border-left: 0.2rem solid #19e2b5; }
 
 /*********************************************************
     Forms
@@ -536,8 +552,8 @@ textarea {
   width: 100%;
   padding: 1rem 2rem;
   font-family: inherit;
-  color: #b1bac7;
-  border: 0.2rem solid #eceff2;
+  color: #626979;
+  border: 0.2rem solid #979daa;
   border-radius: .4rem;
   outline: none; }
   input[type='email']:focus, input[type='email']:active,
@@ -555,7 +571,7 @@ textarea {
   input[type='url']:active,
   textarea:focus,
   textarea:active {
-    border-color: #17ffcb; }
+    border-color: #19e2b5; }
 
 /*********************************************************
     Grid
@@ -564,14 +580,11 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
   margin: 0 -1rem;
   box-sizing: border-box; }
-  .grid.grid--equal-height .grid__col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
   .grid.grid--reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -632,16 +645,116 @@ textarea {
           flex-basis: 8.33333333%;
       max-width: 8.33333333%; }
 
+@media (max-width: 425px) {
+  .grid .grid__col.grid__col--s-12 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%; }
+  .grid .grid__col.grid__col--s-11 {
+    -ms-flex-preferred-size: 91.66666667%;
+        flex-basis: 91.66666667%;
+    max-width: 91.66666667%; }
+  .grid .grid__col.grid__col--s-10 {
+    -ms-flex-preferred-size: 83.33333333%;
+        flex-basis: 83.33333333%;
+    max-width: 83.33333333%; }
+  .grid .grid__col.grid__col--s-9 {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    max-width: 75%; }
+  .grid .grid__col.grid__col--s-8 {
+    -ms-flex-preferred-size: 66.66666667%;
+        flex-basis: 66.66666667%;
+    max-width: 66.66666667%; }
+  .grid .grid__col.grid__col--s-7 {
+    -ms-flex-preferred-size: 58.33333333%;
+        flex-basis: 58.33333333%;
+    max-width: 58.33333333%; }
+  .grid .grid__col.grid__col--s-6 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%; }
+  .grid .grid__col.grid__col--s-5 {
+    -ms-flex-preferred-size: 41.66666667%;
+        flex-basis: 41.66666667%;
+    max-width: 41.66666667%; }
+  .grid .grid__col.grid__col--s-4 {
+    -ms-flex-preferred-size: 33.33333333%;
+        flex-basis: 33.33333333%;
+    max-width: 33.33333333%; }
+  .grid .grid__col.grid__col--s-3 {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%; }
+  .grid .grid__col.grid__col--s-2 {
+    -ms-flex-preferred-size: 16.66666667%;
+        flex-basis: 16.66666667%;
+    max-width: 16.66666667%; }
+  .grid .grid__col.grid__col--s-1 {
+    -ms-flex-preferred-size: 8.33333333%;
+        flex-basis: 8.33333333%;
+    max-width: 8.33333333%; } }
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .grid .grid__col.grid__col--m-12 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%; }
+  .grid .grid__col.grid__col--m-11 {
+    -ms-flex-preferred-size: 91.66666667%;
+        flex-basis: 91.66666667%;
+    max-width: 91.66666667%; }
+  .grid .grid__col.grid__col--m-10 {
+    -ms-flex-preferred-size: 83.33333333%;
+        flex-basis: 83.33333333%;
+    max-width: 83.33333333%; }
+  .grid .grid__col.grid__col--m-9 {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    max-width: 75%; }
+  .grid .grid__col.grid__col--m-8 {
+    -ms-flex-preferred-size: 66.66666667%;
+        flex-basis: 66.66666667%;
+    max-width: 66.66666667%; }
+  .grid .grid__col.grid__col--m-7 {
+    -ms-flex-preferred-size: 58.33333333%;
+        flex-basis: 58.33333333%;
+    max-width: 58.33333333%; }
+  .grid .grid__col.grid__col--m-6 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%; }
+  .grid .grid__col.grid__col--m-5 {
+    -ms-flex-preferred-size: 41.66666667%;
+        flex-basis: 41.66666667%;
+    max-width: 41.66666667%; }
+  .grid .grid__col.grid__col--m-4 {
+    -ms-flex-preferred-size: 33.33333333%;
+        flex-basis: 33.33333333%;
+    max-width: 33.33333333%; }
+  .grid .grid__col.grid__col--m-3 {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%; }
+  .grid .grid__col.grid__col--m-2 {
+    -ms-flex-preferred-size: 16.66666667%;
+        flex-basis: 16.66666667%;
+    max-width: 16.66666667%; }
+  .grid .grid__col.grid__col--m-1 {
+    -ms-flex-preferred-size: 8.33333333%;
+        flex-basis: 8.33333333%;
+    max-width: 8.33333333%; } }
+
 /*********************************************************
     Links
 *********************************************************/
 a {
   text-decoration: none;
-  color: #17ffcb;
-  border-bottom: 0.2rem solid rgba(23, 255, 203, 0.35); }
+  color: #19e2b5;
+  border-bottom: 0.2rem solid rgba(25, 226, 181, 0.35); }
   a:hover {
-    color: #00b089;
-    border-bottom-color: #00b089; }
+    color: #0f866b;
+    border-bottom-color: #0f866b; }
 
 /*********************************************************
     Lists
@@ -678,7 +791,7 @@ img {
   margin: 3.5rem 0;
   width: 100%;
   height: .1rem;
-  background-color: rgba(177, 186, 199, 0.25);
+  background-color: rgba(98, 105, 121, 0.25);
   border: none; }
   .hr--small {
     width: 30%; }
@@ -693,15 +806,15 @@ img {
   .table th {
     padding: .8rem;
     font-weight: 600;
-    border-bottom: 0.2rem solid rgba(177, 186, 199, 0.25);
+    border-bottom: 0.2rem solid rgba(98, 105, 121, 0.25);
     vertical-align: bottom; }
   .table td {
     padding: .8rem;
-    border-top: 1px solid rgba(177, 186, 199, 0.25); }
+    border-top: 1px solid rgba(98, 105, 121, 0.25); }
   .table.table--striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0.04); }
+    background-color: rgba(0, 0, 0, 0.03); }
   .table.table--hover tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.15); }
+    background-color: rgba(0, 0, 0, 0.08); }
 
 /*********************************************************
     Typography
@@ -761,10 +874,10 @@ abbr[title] {
 
 .utilities__text--loud {
   font-weight: 700;
-  color: #76859c; }
+  color: #343841; }
 
 .utilities__text--quiet {
-  color: #eceff2; }
+  color: #979daa; }
 
 /*********************************************************
     Position Utilities
