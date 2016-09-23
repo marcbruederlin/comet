@@ -4,6 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Comet — A minimal and robust BEM-style CSS toolkit.</title>
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Comet — A minimal and robust BEM-style CSS toolkit."/>
+    <meta name="msapplication-TileColor" content="#19e2b5" />
+    <meta name="msapplication-TileImage" content="./img/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./img/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./img/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./img/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./img/favicons/mstile-310x310.png" />
+
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="./dist/comet.min.css" />
     <link rel="stylesheet" href="./css/prism.css" />
@@ -31,7 +53,7 @@
           <a href="#getting-started" class="button">Getting Started</a>
 
           <ul class="list list--inline">
-            <li>Version: beta.01</li>
+            <li>Version: 1.0.0</li>
             <li>License: MIT</li>
             <li class="github">
               <a class="github-button" href="https://github.com/marcbruederlin/comet" data-icon="octicon-star" data-count-href="/marcbruederlin/comet/stargazers" 
@@ -44,19 +66,19 @@
     
     <section class="getting-started">
       <div class="container utilities__pos--center">
-        <a name="getting-started"></a>
+        <a id="getting-started"></a>
         <h3>Getting Started</h3>
         <p>There are several different ways to get started with Comet, you can choose the most suitable option for your needs.</p>
         <a href="https://github.com/marcbruederlin/comet/archive/master.zip" class="button" title="Download the latest version">Download Comet</a>
 
         <h4>Install with npm</h4>
-        <code class="code code--background">npm install comet --save</code>
+        <code class="code code--background">npm install comet-css --save</code>
 
         <h4>Install with Bower</h4>
-        <code class="code code--background">bower install comet --save</code>
+        <code class="code code--background">bower install comet-css --save</code>
 
         <h4>Use the CDN</h4>
-        <pre><code class="language-html">&lt;link href="https://npmcdn.com/comet@1.0.0/dist/comet.min.css" rel="stylesheet"&gt;</code></pre>
+        <pre><code class="language-html">&lt;link href="https://npmcdn.com/comet-css@1.0.0/dist/comet.min.css" rel="stylesheet"&gt;</code></pre>
 
         <h4>Usage</h4>
         <p>First, use a method above to download Comet. Then just add these tags in the head of your HTML file.</p>
@@ -72,7 +94,7 @@
 
     <section class="typography">
       <div class="container utilities__pos--center">
-        <a name="typography"></a>
+        <a id="typography"></a>
         <h3>Typography</h3>
         <p>
           Comet uses the <a href="https://fonts.google.com/specimen/Source+Sans+Pro" target="_blank">Source Sans Pro</a> family as the default sans serif 
@@ -132,7 +154,7 @@
 
     <section class="blockquotes">
       <div class="container utilities__pos--center">
-        <a name="blockquotes"></a>
+        <a id="blockquotes"></a>
         <h3>Blockquotes</h3>
         <p>Blockquotes are used to label text that is quoted from another source.</p>
 
@@ -152,7 +174,7 @@
 
     <section class="codes">
       <div class="container utilities__pos--center">
-        <a name="codes"></a>
+        <a id="codes"></a>
         <h3>Code</h3>
         <p>
           You can use the <code class="code">&lt;code&gt;</code> tag to wrap text that represents computer code. By default <code class="code">&lt;code&gt;</code> is a inline element.
@@ -161,7 +183,7 @@
         
 <pre><code class="code">.test-class {
   color: red;
-}</pre></code>
+}</code></pre>
 
 <pre><code class="language-html">&lt;pre&gt;&lt;code class="code"&gt;
 .test-class {
@@ -185,7 +207,7 @@
 
     <section class="lists">
       <div class="container utilities__pos--center">
-        <a name="lists"></a>
+        <a id="lists"></a>
         <h3>Lists</h3>
         <p>You can use the default <code class="code">&lt;ul&gt;</code>, <code class="code">&lt;ol&gt;</code> and <code class="code">&lt;dl&gt;</code> lists. </p>
 
@@ -263,7 +285,7 @@
 
 	  <section class="tables">
       <div class="container utilities__pos--center">
-        <a name="tables"></a>
+        <a id="tables"></a>
         <h3>Tables</h3>
 
         <h4>Basic table</h4>
@@ -368,7 +390,7 @@
 
     <section class="buttons">
       <div class="container utilities__pos--center">
-        <a name="buttons"></a>
+        <a id="buttons"></a>
         <h3>Buttons</h3>
         <p>There are three basic styles for buttons. You can also add the button classes to anchor elements.</p>
 
@@ -395,9 +417,17 @@
       </div>
     </section>
 
+    <section class="form">
+      <div class="container utilities__pos--center">
+        <a id="form"></a>
+        <h3>Form</h3>
+        <hr class="hr seperator" />
+      </div>
+    </section>
+
     <section class="grid-system">
       <div class="container utilities__pos--center">
-        <a name="grid-system"></a>
+        <a id="grid-system"></a>
         <h3>Grid system</h3>
         <p>Comet provides a simple grid using flexbox.</p>
 
@@ -506,7 +536,7 @@
 
     <section class="utilities">
       <div class="container utilities__pos--center">
-        <a name="utilities"></a>
+        <a id="utilities"></a>
         <h3>Utilities</h3>
         <p>Comet provides a couple of useful utilities to boost your productivity.</p>
 
@@ -565,13 +595,12 @@
 
     <section class="support">
       <div class="container utilities__pos--center">
-        <a name="support"></a>
+        <a id="support"></a>
         <h3>Browser Support</h3>
         <p>Comet uses autoprefixer to make features compatible with earlier browser versions. Comet is compatible with:</p>
         <ul>
           <li>Chrome</li>    
-          <li>Firefox</li>    
-          <li>Edge</li>    
+          <li>Firefox</li>     
           <li>Internet Explorer (10+)</li>    
           <li>Opera</li>    
           <li>Safari</li>    
@@ -583,7 +612,7 @@
 
     <section class="customization">
       <div class="container utilities__pos--center">
-        <a name="customization"></a>
+        <a id="customization"></a>
         <h3>Customization</h3>
         <p>Soon…</p>
       </div>

@@ -1,11 +1,8 @@
 body {
-  background-color: #434858;
+  background-color: #eef3f5;
   background-image: url('../img/pattern.png');
-  background-blend-mode: multiply;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #fff;
+  background-blend-mode: lighten;
+  background-attachment: fixed;
 }
 
 .seperator {
@@ -24,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid .demo {
   background: #f0f1f2;
-  color: #434858;
   border-radius: .4rem;
   display: block;
   height: 3.0rem;
@@ -46,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .introduction .list {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .introduction .list .github {
@@ -76,14 +72,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 pre[class*="language-"] {
-    margin-bottom: 30px;
-    font-size: 13px;
-    line-height: 1.7;
-    asdbackground-color: rgba(0, 0, 0, .3);
+  margin-bottom: 30px;
+  font-size: 13px;
+  line-height: 1.7;
 }
 
 code[class*="language-"] {
-    text-shadow: none;
+  text-shadow: none;
 }
 
 .meta-info {
