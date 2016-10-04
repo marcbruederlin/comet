@@ -22,8 +22,13 @@ $font__base-font-size: 1.6rem;
 $font__base-line-height: 1.6;
 
 /*********************************************************
+    Layout
+*********************************************************/
+$container__width: 960px;
+$container__padding: 2rem;
+
+/*********************************************************
     Responsive
 *********************************************************/
 $breakpoint__small: 425px;
 $breakpoint__medium: 768px;
-// $breakpoint__large: 992px;

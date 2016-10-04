@@ -12,6 +12,9 @@
     Typography
 *********************************************************/
 /*********************************************************
+    Layout
+*********************************************************/
+/*********************************************************
     Responsive
 *********************************************************/
 /*********************************************************
@@ -442,6 +445,11 @@ body {
 *:before {
   box-sizing: inherit; }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem; }
+
 /*********************************************************
     Print
 *********************************************************/
@@ -580,10 +588,11 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: auto;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  margin: 0 -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
   box-sizing: border-box; }
   .grid.grid--reverse {
     -webkit-box-orient: horizontal;

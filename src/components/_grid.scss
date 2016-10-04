@@ -3,9 +3,10 @@
 *********************************************************/
 .grid {
   display: flex;
-  width: 100%;
+  width: auto;
   flex-flow: row wrap;
-  margin: 0 -1rem;
+  margin-left: -($container__padding/2);
+  margin-right: -($container__padding/2);
   box-sizing: border-box;
 
   &.grid--reverse {
