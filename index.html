@@ -417,10 +417,37 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="forms">
       <div class="container utilities__pos--center">
-        <a id="form"></a>
-        <h3>Form</h3>
+        <a id="forms"></a>
+        <h3>Forms</h3>
+
+        <form class="form">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your email" />
+
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Your message"></textarea>
+
+          <button type="button" class="button">Submit</button>
+        </form>
+
+        <pre><code class="language-html">&lt;form class="form"&gt;
+  &lt;label for="name"&gt;Name&lt;/label&gt;
+  &lt;input type="text" id="name" placeholder="Your name" /&gt;
+
+  &lt;label for="email"&gt;Email&lt;/label&gt;
+  &lt;input type="email" id="email" placeholder="Your email" /&gt;
+
+  &lt;label for="message"&gt;Message&lt;/label&gt;
+  &lt;textarea id="message" placeholder="Your message"&gt;&lt;/textarea&gt;
+
+  &lt;button type="button" class="button"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
         <hr class="hr seperator" />
       </div>
     </section>
@@ -474,7 +501,31 @@
   &lt;div class="grid__col grid__col--6"&gt;&lt;/div&gt;
   &lt;div class="grid__col grid__col--6"&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        <p>The grid module has two modifiers:</p>
+
+        <h4>Responsive Grid</h4>
+        <p>
+          Depending on the screen size you can use different classes to resize your columns. 
+
+          <pre><code class="language-html">&lt;!-- Medium sized devices --&gt;
+grid__col--m-*
+
+&lt;!-- Small devices --&gt;
+grid__col--s-*</code></pre>
+          The shortcut <code>m</code> stands for <code>medium</code> 
+          sized devices e.g. Tablets. <code>s</code> stands for <code>small</code> devices e.g. smartphones.
+        </p>
+
+        <div class="grid">
+          <div class="grid__col grid__col--8 grid__col--m-6 grid__col--s-12"><div class="demo">Hello</div></div>
+          <div class="grid__col grid__col--4 grid__col--m-6 grid__col--s-12"><div class="demo">world</div></div>
+        </div>
+
+        <pre><code class="language-html">&lt;div class="grid"&gt;
+  &lt;div class="grid__col grid__col--8 grid__col--m-6 grid__col--s-12"&gt;&lt;div class="demo"&gt;Hello&lt;/div>&lt;/div&gt;
+  &lt;div class="grid__col grid__col--4 grid__col--m-6 grid__col--s-12"&gt;&lt;div class="demo"&gt;world&lt;/div>&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <p>The grid module also has two modifiers:</p>
 
         <h4>Reverse grid</h4>
         <div class="grid grid--reverse">
@@ -614,7 +665,14 @@
       <div class="container utilities__pos--center">
         <a id="customization"></a>
         <h3>Customization</h3>
-        <p>Soon…</p>
+        <p>To build a customised version, make sure that you have node.js and gulp.js installed, then:</p>
+        <ol class="list">
+          <li>Clone the repository: <code>https://github.com/marcbruederlin/comet.git</code></li>
+          <li>Change in the project directory: <code>cd comet</code></li>
+          <li>Install the dependencies: <code>npm install</code></li>
+          <li>Customize the variables in <a href="https://github.com/marcbruederlin/comet/blob/master/src/custom/_variables.scss" target="_blank"><code>src/custom/_variables.scss</code></a></li>
+          <li>Run <code>gulp build</code> to regenerate the dist folder. You can also run <code>gulp build --watch</code> to watch for file changes and automatically rebuild the files.
+        </ol>
       </div>
     </section>
 
@@ -626,5 +684,15 @@
         <a class="github-button" href="https://github.com/marcbruederlin" aria-label="Follow @marcbruederlin on GitHub">Follow @marcbruederlin</a><br />
       </div>
     </footer>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-25750134-5', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
