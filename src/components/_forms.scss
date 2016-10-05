@@ -7,8 +7,10 @@ fieldset {
   border: none;
 }
 
-label {
+label,
+.form > .form__label {
   display: block;
+  margin-bottom: .2rem;
   font-weight: 600;
 }
 
@@ -22,15 +24,36 @@ input[type='url'],
 textarea, {
   display: inline-block;
   width: 100%;
-  padding: 1rem 2rem;
+  margin-bottom: 2.3rem;
+  padding: 1rem 1.3rem;
   font-family: inherit;
   color: $color__text;
-  border: .2rem solid $color__text--light;
+  border: .2rem solid $color__border--input;
   border-radius: .4rem;
   outline: none;
 
   &:focus,
   &:active {
     border-color: $color__primary;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+textarea {
+  max-width: 100%;
+}
+
+.form {
+  &__input {
+    &--success {
+      border-color: $color__border--success!important;
+    }
+
+    &--error {
+      border-color: $color__border--error!important;
+    }
   }
 }

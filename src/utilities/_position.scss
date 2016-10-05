@@ -3,7 +3,18 @@
 *********************************************************/
 .utilities__pos {
   &--center {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--left {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  &--right {
+    margin-left: auto;
+    margin-right: 0;
   }
   
   &--center-center {
