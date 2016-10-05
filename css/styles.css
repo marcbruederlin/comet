@@ -5,6 +5,22 @@ body {
   background-attachment: fixed;
 }
 
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 15px;
+}
+
+input[type=email]:last-of-type,
+input[type=number]:last-of-type,
+input[type=password]:last-of-type,
+input[type=search]:last-of-type,
+input[type=tel]:last-of-type,
+input[type=text]:last-of-type,
+input[type=url]:last-of-type,
+textarea:last-of-type {
+  margin-bottom: 23px;
+}
+
 .seperator {
   margin-top: 65px;
 }
@@ -42,7 +58,12 @@ body {
 }
 
 .introduction .list {
+  width: 290px;
   margin-top: 60px;
+}
+
+.introduction .list li {
+  margin-right: 0;
 }
 
 .introduction .list .github {
@@ -52,13 +73,13 @@ body {
 
 .introduction .list.list--inline li:after {
   content: "·";
-  margin-left: 10px;
+  margin: 0 10px;
   opacity: 0.5;
 }
 
 .introduction .list.list--inline li:last-of-type:after {
   content: "";
-  margin-left: 0;
+  margin: 0;
 }
 
 .typography .headings h1,
@@ -85,6 +106,7 @@ code[class*="language-"] {
   margin-top: 100px;
   margin-bottom: 40px;
   font-size: 14px;
+  line-height: 1.7;
 }
 
 .heart {
