@@ -27,18 +27,18 @@
     outline: none;
   }
 
-  &.button--small {
+  &--small {
     padding: 0 1rem;
     font-size: 1.1rem;
     line-height: 3rem;
   }
 
-  &.button--large {
+  &--large {
     font-size: 1.5rem;
     line-height: 6rem;
   }
 
-  &.button--outline {
+  &--outline {
     color: $color__primary;
     background-color: transparent;
 
@@ -47,7 +47,7 @@
     }
   }
 
-  &.button--clear {
+  &--clear {
     color: $color__primary;
     background-color: transparent;
     border-color: transparent;

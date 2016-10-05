@@ -1,5 +1,5 @@
 /*!
- * Comet v1.0.0
+ * Comet v1.1.0
  * https://github.com/marcbruederlin/comet
  *
  * Copyright (c) 2016 Marc Bruederlin
@@ -10,6 +10,9 @@
 *********************************************************/
 /*********************************************************
     Typography
+*********************************************************/
+/*********************************************************
+    Layout
 *********************************************************/
 /*********************************************************
     Responsive
@@ -442,6 +445,11 @@ body {
 *:before {
   box-sizing: inherit; }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem; }
+
 /*********************************************************
     Print
 *********************************************************/
@@ -469,7 +477,7 @@ body {
   .blockquote > .blockquote__footer {
     margin-top: .3rem;
     color: #979daa; }
-  .blockquote.blockquote--highlight {
+  .blockquote--highlight {
     border-left: 0.2rem solid #19e2b5; }
 
 /*********************************************************
@@ -496,23 +504,23 @@ body {
     background-color: #0f866b;
     border-color: #0f866b;
     outline: none; }
-  .button.button--small {
+  .button--small {
     padding: 0 1rem;
     font-size: 1.1rem;
     line-height: 3rem; }
-  .button.button--large {
+  .button--large {
     font-size: 1.5rem;
     line-height: 6rem; }
-  .button.button--outline {
+  .button--outline {
     color: #19e2b5;
     background-color: transparent; }
-    .button.button--outline:hover {
+    .button--outline:hover {
       color: #0f866b; }
-  .button.button--clear {
+  .button--clear {
     color: #19e2b5;
     background-color: transparent;
     border-color: transparent; }
-    .button.button--clear:hover {
+    .button--clear:hover {
       color: #0f866b; }
 
 /*********************************************************
@@ -521,10 +529,10 @@ body {
 .code {
   font-family: "Monaco", monospace;
   font-size: 1.3rem; }
-  .code.code--background {
+  .code--background {
     padding: .5rem 1rem;
     background: rgba(0, 0, 0, 0.05); }
-  .code.code--highlight {
+  .code--highlight {
     padding: .5rem 1rem;
     border-left: 0.2rem solid #19e2b5; }
 
@@ -536,8 +544,10 @@ fieldset {
   padding: 0;
   border: none; }
 
-label {
+label,
+.form > .form__label {
   display: block;
+  margin-bottom: .2rem;
   font-weight: 600; }
 
 input[type='email'],
@@ -550,10 +560,11 @@ input[type='url'],
 textarea {
   display: inline-block;
   width: 100%;
-  padding: 1rem 2rem;
+  margin-bottom: 2.3rem;
+  padding: 1rem 1.3rem;
   font-family: inherit;
   color: #626979;
-  border: 0.2rem solid #979daa;
+  border: 0.2rem solid #cbccd0;
   border-radius: .4rem;
   outline: none; }
   input[type='email']:focus, input[type='email']:active,
@@ -572,6 +583,24 @@ textarea {
   textarea:focus,
   textarea:active {
     border-color: #19e2b5; }
+  input[type='email']:last-of-type,
+  input[type='number']:last-of-type,
+  input[type='password']:last-of-type,
+  input[type='search']:last-of-type,
+  input[type='tel']:last-of-type,
+  input[type='text']:last-of-type,
+  input[type='url']:last-of-type,
+  textarea:last-of-type {
+    margin-bottom: 0; }
+
+textarea {
+  max-width: 100%; }
+
+.form__input--success {
+  border-color: #18b35b !important; }
+
+.form__input--error {
+  border-color: #ce2a12 !important; }
 
 /*********************************************************
     Grid
@@ -580,167 +609,168 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: auto;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  margin: 0 -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
   box-sizing: border-box; }
-  .grid.grid--reverse {
+  .grid--reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
-  .grid.grid--gapless {
+  .grid--gapless {
     margin: 0; }
-    .grid.grid--gapless .grid__col {
+    .grid--gapless .grid__col {
       padding: 0; }
   .grid .grid__col {
     padding: 0 1rem 1rem; }
-    .grid .grid__col.grid__col--12 {
+    .grid .grid__col--12 {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
       max-width: 100%; }
-    .grid .grid__col.grid__col--11 {
+    .grid .grid__col--11 {
       -ms-flex-preferred-size: 91.66666667%;
           flex-basis: 91.66666667%;
       max-width: 91.66666667%; }
-    .grid .grid__col.grid__col--10 {
+    .grid .grid__col--10 {
       -ms-flex-preferred-size: 83.33333333%;
           flex-basis: 83.33333333%;
       max-width: 83.33333333%; }
-    .grid .grid__col.grid__col--9 {
+    .grid .grid__col--9 {
       -ms-flex-preferred-size: 75%;
           flex-basis: 75%;
       max-width: 75%; }
-    .grid .grid__col.grid__col--8 {
+    .grid .grid__col--8 {
       -ms-flex-preferred-size: 66.66666667%;
           flex-basis: 66.66666667%;
       max-width: 66.66666667%; }
-    .grid .grid__col.grid__col--7 {
+    .grid .grid__col--7 {
       -ms-flex-preferred-size: 58.33333333%;
           flex-basis: 58.33333333%;
       max-width: 58.33333333%; }
-    .grid .grid__col.grid__col--6 {
+    .grid .grid__col--6 {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
       max-width: 50%; }
-    .grid .grid__col.grid__col--5 {
+    .grid .grid__col--5 {
       -ms-flex-preferred-size: 41.66666667%;
           flex-basis: 41.66666667%;
       max-width: 41.66666667%; }
-    .grid .grid__col.grid__col--4 {
+    .grid .grid__col--4 {
       -ms-flex-preferred-size: 33.33333333%;
           flex-basis: 33.33333333%;
       max-width: 33.33333333%; }
-    .grid .grid__col.grid__col--3 {
+    .grid .grid__col--3 {
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
       max-width: 25%; }
-    .grid .grid__col.grid__col--2 {
+    .grid .grid__col--2 {
       -ms-flex-preferred-size: 16.66666667%;
           flex-basis: 16.66666667%;
       max-width: 16.66666667%; }
-    .grid .grid__col.grid__col--1 {
+    .grid .grid__col--1 {
       -ms-flex-preferred-size: 8.33333333%;
           flex-basis: 8.33333333%;
       max-width: 8.33333333%; }
 
 @media (max-width: 425px) {
-  .grid .grid__col.grid__col--s-12 {
+  .grid .grid__col--s-12 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     max-width: 100%; }
-  .grid .grid__col.grid__col--s-11 {
+  .grid .grid__col--s-11 {
     -ms-flex-preferred-size: 91.66666667%;
         flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
-  .grid .grid__col.grid__col--s-10 {
+  .grid .grid__col--s-10 {
     -ms-flex-preferred-size: 83.33333333%;
         flex-basis: 83.33333333%;
     max-width: 83.33333333%; }
-  .grid .grid__col.grid__col--s-9 {
+  .grid .grid__col--s-9 {
     -ms-flex-preferred-size: 75%;
         flex-basis: 75%;
     max-width: 75%; }
-  .grid .grid__col.grid__col--s-8 {
+  .grid .grid__col--s-8 {
     -ms-flex-preferred-size: 66.66666667%;
         flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
-  .grid .grid__col.grid__col--s-7 {
+  .grid .grid__col--s-7 {
     -ms-flex-preferred-size: 58.33333333%;
         flex-basis: 58.33333333%;
     max-width: 58.33333333%; }
-  .grid .grid__col.grid__col--s-6 {
+  .grid .grid__col--s-6 {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     max-width: 50%; }
-  .grid .grid__col.grid__col--s-5 {
+  .grid .grid__col--s-5 {
     -ms-flex-preferred-size: 41.66666667%;
         flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
-  .grid .grid__col.grid__col--s-4 {
+  .grid .grid__col--s-4 {
     -ms-flex-preferred-size: 33.33333333%;
         flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
-  .grid .grid__col.grid__col--s-3 {
+  .grid .grid__col--s-3 {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     max-width: 25%; }
-  .grid .grid__col.grid__col--s-2 {
+  .grid .grid__col--s-2 {
     -ms-flex-preferred-size: 16.66666667%;
         flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
-  .grid .grid__col.grid__col--s-1 {
+  .grid .grid__col--s-1 {
     -ms-flex-preferred-size: 8.33333333%;
         flex-basis: 8.33333333%;
     max-width: 8.33333333%; } }
 
 @media (min-width: 426px) and (max-width: 768px) {
-  .grid .grid__col.grid__col--m-12 {
+  .grid .grid__col--m-12 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     max-width: 100%; }
-  .grid .grid__col.grid__col--m-11 {
+  .grid .grid__col--m-11 {
     -ms-flex-preferred-size: 91.66666667%;
         flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
-  .grid .grid__col.grid__col--m-10 {
+  .grid .grid__col--m-10 {
     -ms-flex-preferred-size: 83.33333333%;
         flex-basis: 83.33333333%;
     max-width: 83.33333333%; }
-  .grid .grid__col.grid__col--m-9 {
+  .grid .grid__col--m-9 {
     -ms-flex-preferred-size: 75%;
         flex-basis: 75%;
     max-width: 75%; }
-  .grid .grid__col.grid__col--m-8 {
+  .grid .grid__col--m-8 {
     -ms-flex-preferred-size: 66.66666667%;
         flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
-  .grid .grid__col.grid__col--m-7 {
+  .grid .grid__col--m-7 {
     -ms-flex-preferred-size: 58.33333333%;
         flex-basis: 58.33333333%;
     max-width: 58.33333333%; }
-  .grid .grid__col.grid__col--m-6 {
+  .grid .grid__col--m-6 {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     max-width: 50%; }
-  .grid .grid__col.grid__col--m-5 {
+  .grid .grid__col--m-5 {
     -ms-flex-preferred-size: 41.66666667%;
         flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
-  .grid .grid__col.grid__col--m-4 {
+  .grid .grid__col--m-4 {
     -ms-flex-preferred-size: 33.33333333%;
         flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
-  .grid .grid__col.grid__col--m-3 {
+  .grid .grid__col--m-3 {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     max-width: 25%; }
-  .grid .grid__col.grid__col--m-2 {
+  .grid .grid__col--m-2 {
     -ms-flex-preferred-size: 16.66666667%;
         flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
-  .grid .grid__col.grid__col--m-1 {
+  .grid .grid__col--m-1 {
     -ms-flex-preferred-size: 8.33333333%;
         flex-basis: 8.33333333%;
     max-width: 8.33333333%; } }
@@ -759,23 +789,22 @@ a {
 /*********************************************************
     Lists
 *********************************************************/
+.list {
+  margin: 3rem 0; }
+  .list--inline > li {
+    float: left;
+    margin-right: 5rem; }
+    .list--inline > li:last-of-type {
+      margin-right: 0; }
+  .list--unstyled {
+    padding: 0;
+    list-style: none; }
+
 dl dt {
   font-weight: 600; }
 
 dl dd {
   margin: 0; }
-
-.list {
-  margin: 3rem 0;
-  padding: 0; }
-  .list.list--unstyled {
-    margin: 0;
-    list-style: none; }
-  .list.list--inline li {
-    display: inline-block;
-    margin-right: 1rem; }
-    .list.list--inline li:last-of-type {
-      margin-right: 0; }
 
 /*********************************************************
     Media
@@ -811,10 +840,10 @@ img {
   .table td {
     padding: .8rem;
     border-top: 1px solid rgba(98, 105, 121, 0.25); }
-  .table.table--striped tbody tr:nth-of-type(odd) {
+  .table--striped tbody tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, 0.03); }
-  .table.table--hover tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.08); }
+  .table--hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.06); }
 
 /*********************************************************
     Typography
@@ -883,7 +912,16 @@ abbr[title] {
     Position Utilities
 *********************************************************/
 .utilities__pos--center {
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto; }
+
+.utilities__pos--left {
+  margin-left: 0;
+  margin-right: auto; }
+
+.utilities__pos--right {
+  margin-left: auto;
+  margin-right: 0; }
 
 .utilities__pos--center-center {
   position: absolute;
@@ -901,10 +939,10 @@ abbr[title] {
 .utilities__float--right {
   float: right; }
 
-.utilities__clearfix {
+.utilities__clearfix, .list--inline {
   *zoom: 1; }
-  .utilities__clearfix:before, .utilities__clearfix:after {
+  .utilities__clearfix:before, .list--inline:before, .utilities__clearfix:after, .list--inline:after {
     content: " ";
     display: table; }
-  .utilities__clearfix:after {
+  .utilities__clearfix:after, .list--inline:after {
     clear: both; }

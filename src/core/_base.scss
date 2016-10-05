@@ -20,3 +20,9 @@ body {
 *:before {
   box-sizing: inherit;
 }
+
+.container {
+  max-width: $container__width;
+  margin: 0 auto;
+  padding: 0 $container__padding;
+}

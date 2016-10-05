@@ -1,6 +1,28 @@
 /*********************************************************
     Lists
 *********************************************************/
+.list {
+  margin: 3rem 0;
+
+  &--inline {
+    @extend .utilities__clearfix;
+
+    & > li {
+      float: left;
+      margin-right: 5rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &--unstyled {
+    padding: 0;
+    list-style: none;
+  }
+}
+
 dl {
   & dt {
     font-weight: 600;
@@ -8,26 +30,5 @@ dl {
 
   & dd {
     margin: 0;
-  }
-}
-
-.list {
-  margin: 3rem 0;
-  padding: 0;
-
-  &.list--unstyled {
-    margin: 0;
-    list-style: none;
-  }
-
-  &.list--inline {
-    & li {
-      display: inline-block;
-      margin-right: 1rem;
-
-      &:last-of-type {
-        margin-right: 0;
-      }
-    }
   }
 }

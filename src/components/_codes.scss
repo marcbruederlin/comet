@@ -5,12 +5,12 @@
 	font-family: $font__monospace;
 	font-size: 1.3rem;
 
-	&.code--background {
+	&--background {
     padding: .5rem 1rem;
 		background: rgba(0, 0, 0, .05);
 	}
 
-  &.code--highlight {
+  &--highlight {
     padding: .5rem 1rem;
     border-left: .2rem solid $color__primary;
   }

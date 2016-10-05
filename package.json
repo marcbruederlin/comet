@@ -1,8 +1,8 @@
 {
   "name": "comet-css",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A minimal and robust BEM-style CSS toolkit.",
-  "main": "dist/comet.css",
+  "main": "dist/comet.min.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marcbruederlin/comet.git"
@@ -26,12 +26,12 @@
   ],
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-clean": "^0.3.2",
-    "gulp-clean-css": "^2.0.11",
+    "gulp-clean-css": "^2.0.13",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
-    "gulp-watch": "^4.3.8",
-    "yargs": "^5.0.0"
+    "gulp-watch": "^4.3.10",
+    "yargs": "^6.0.0"
   }
 }
