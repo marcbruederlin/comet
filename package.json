@@ -1,6 +1,6 @@
 {
   "name": "comet-css",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A minimal and robust BEM-style CSS toolkit.",
   "main": "dist/comet.min.css",
   "repository": {
@@ -22,7 +22,10 @@
     "responsive",
     "flexbox",
     "css3",
-    "css"
+    "css",
+    "bem",
+    "components",
+    "modular"
   ],
   "devDependencies": {
     "gulp": "^3.9.1",

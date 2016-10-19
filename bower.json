@@ -14,7 +14,11 @@
     "mobile",
     "responsive",
     "flexbox",
-    "css3"
+    "css3",
+    "css",
+    "bem",
+    "components",
+    "modular"
   ],
   "homepage": "https://github.com/marcbruederlin/comet",
   "ignore": [
@@ -22,6 +26,7 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "demo"
   ]
 }
