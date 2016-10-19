@@ -58,7 +58,7 @@ textarea:last-of-type {
 }
 
 .introduction .list {
-  width: 290px;
+  width: 314px;
   margin-top: 60px;
 }
 
@@ -68,7 +68,7 @@ textarea:last-of-type {
 
 .introduction .list .github {
   position: relative;
-  top: 5px;
+  top: 3px;
 }
 
 .introduction .list.list--inline li:after {
