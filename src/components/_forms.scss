@@ -36,10 +36,6 @@ textarea, {
   &:active {
     border-color: $color__primary;
   }
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
 }
 
 textarea {
