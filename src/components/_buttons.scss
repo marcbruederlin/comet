@@ -44,6 +44,7 @@
 
     &:hover {
       color: $color__primary--dark;
+      background-color: transparent;
     }
   }
 
@@ -54,6 +55,8 @@
 
     &:hover {
       color: $color__primary--dark;
+      background-color: transparent;
+      border-color: transparent;
     }
   }
 }

@@ -5,7 +5,7 @@
   margin: 3rem 0;
 
   &--inline {
-    @extend .utilities__clearfix;
+    @extend .utility__clearfix;
 
     & > li {
       float: left;

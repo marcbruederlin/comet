@@ -1,31 +1,33 @@
 /*********************************************************
-    Text Utilities
+    Text utility
 *********************************************************/
-.utilities__text {
-  &--left {
-    text-align: left;
-  }
+.utility {
+  &__text {
+    &--left {
+      text-align: left;
+    }
 
-  &--right {
-    text-align: right;
-  }
-  
-  &--center {
-    text-align: center;
-  }
+    &--right {
+      text-align: right;
+    }
+    
+    &--center {
+      text-align: center;
+    }
 
-  &--highlight {
-    padding: .25rem;
-    color: $color__text--black;
-    background-color: $color__background--highlight;
-  }
+    &--highlight {
+      padding: .25rem;
+      color: $color__text--black;
+      background-color: $color__background--highlight;
+    }
 
-  &--loud {
-    font-weight: 700;
-    color: $color__text--dark;
-  }
+    &--loud {
+      font-weight: 700;
+      color: $color__text--dark;
+    }
 
-  &--quiet {
-    color: $color__text--light;
+    &--quiet {
+      color: $color__text--light;
+    }
   }
 }
