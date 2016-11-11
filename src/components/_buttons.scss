@@ -17,6 +17,16 @@
   border: .2rem solid $color__primary;
   border-radius: .4rem;
   cursor: pointer;
+
+  &:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $color__primary;
+      border-color: $color__primary;
+    }
+  }
   
   &:hover,
   &:focus,
@@ -42,6 +52,13 @@
     color: $color__primary;
     background-color: transparent;
 
+    &:disabled {
+      &:hover {
+        color: $color__primary;
+        background-color: transparent;
+      }
+    }
+
     &:hover {
       color: $color__primary--dark;
       background-color: transparent;
@@ -52,6 +69,14 @@
     color: $color__primary;
     background-color: transparent;
     border-color: transparent;
+
+    &:disabled {
+      &:hover {
+        color: $color__primary;
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
 
     &:hover {
       color: $color__primary--dark;
