@@ -28,3 +28,4 @@ There are several ways to get started:
 - [Misc](https://marcbruederlin.github.io/comet/#misc)
 - [Browser Support](https://marcbruederlin.github.io/comet/#support)
 - [Customization](https://marcbruederlin.github.io/comet/#customization)
+- [Comet UI](https://marcbruederlin.github.io/comet/#comet-ui)

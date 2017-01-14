@@ -3,7 +3,7 @@
 *********************************************************/
 .code {
 	font-family: $font__monospace;
-	font-size: 1.3rem;
+  font-size: font-scale(-1);
 
 	&--background {
     padding: .5rem 1rem;

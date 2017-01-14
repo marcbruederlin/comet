@@ -3,7 +3,7 @@
   "description": "A minimal and robust BEM-style CSS toolkit.",
   "main": "dist/comet.css",
   "authors": [
-    "Marc Brüderlin <hello@marcbruederlin.com>"
+    "Marc Bruederlin <hello@marcbruederlin.com>"
   ],
   "license": "MIT",
   "keywords": [
