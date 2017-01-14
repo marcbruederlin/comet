@@ -434,7 +434,7 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   color: #626979;
   -webkit-font-smoothing: antialiased;
@@ -465,6 +465,9 @@ body {
     display: none; } }
 
 /*********************************************************
+    Functions
+*********************************************************/
+/*********************************************************
     Components
 *********************************************************/
 /*********************************************************
@@ -486,9 +489,9 @@ body {
 *********************************************************/
 .button {
   display: inline-block;
-  padding: 0 3rem;
+  padding: 0 2rem;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 1.04167rem;
   font-weight: 700;
   line-height: 4rem;
   letter-spacing: .05rem;
@@ -513,7 +516,7 @@ body {
     outline: none; }
   .button--small {
     padding: 0 1rem;
-    font-size: 1.1rem;
+    font-size: 0.86806rem;
     line-height: 3rem; }
   .button--large {
     font-size: 1.5rem;
@@ -545,7 +548,7 @@ body {
 *********************************************************/
 .code {
   font-family: "Monaco", monospace;
-  font-size: 1.3rem; }
+  font-size: 1.25rem; }
   .code--background {
     padding: .5rem 1rem;
     background: rgba(0, 0, 0, 0.05); }
@@ -864,22 +867,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #000; }
 
 h1 {
-  font-size: 7.2rem; }
+  font-size: 4.47898rem; }
 
 h2 {
-  font-size: 5.4rem; }
+  font-size: 3.73248rem; }
 
 h3 {
-  font-size: 3.6rem; }
+  font-size: 3.1104rem; }
 
 h4 {
-  font-size: 2.7rem; }
+  font-size: 2.592rem; }
 
 h5 {
-  font-size: 2.3rem; }
+  font-size: 2.16rem; }
 
 h6 {
-  font-size: 1.9rem; }
+  font-size: 1.5rem; }
 
 p {
   margin: 0 0 3rem 0; }
